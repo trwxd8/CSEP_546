@@ -3,7 +3,7 @@ import Assignment1Support
 import EvaluationsStub
 
 ### UPDATE this path for your environment
-kDataPath = "..\\..\\..\\Datasets\\SMS Spam\\extracted\\SMSSpamCollection"
+kDataPath = "..\\Data\\SMSSpamCollection"
 
 (xRaw, yRaw) = Assignment1Support.LoadRawData(kDataPath)
 
@@ -38,14 +38,14 @@ print("### Heuristic model")
 EvaluationsStub.ExecuteAll(yTest, yTestPredicted)
 
 ############################
-# import LogisticRegressionModel
-# model = LogisticRegressionModel.LogisticRegressionModel()
+import LogisticRegressionModel
+model = LogisticRegressionModel.LogisticRegressionModel()
 
-# print("Logistic regression model")
-# for i in [50000]:
-#     model.fit(xTrain, yTrain, iterations=i, step=0.01)
-#     yTestPredicted = model.predict(xTest)
+print("Logistic regression model")
+for i in [50000]:
+    model.fit(xTrain, yTrain, iterations=i, step=0.01)
+    yTestPredicted = model.predict(xTest)
     
-#     print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(xTest, yTest), EvaluationStub.Accuracy(yTest, yTestPredicted)))
+    print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(xTest, yTest), EvaluationStub.Accuracy(yTest, yTestPredicted)))
 
-# EvaluationsStub.ExecuteAll(yTest, yTestPredicted)
+EvaluationsStub.ExecuteAll(yTest, yTestPredicted)
