@@ -46,6 +46,7 @@ for i in [50000]:
     model.fit(xTrain, yTrain, iterations=i, step=0.01)
     yTestPredicted = model.predict(xTest)
     
-    print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(xTest, yTest), EvaluationStub.Accuracy(yTest, yTestPredicted)))
+
+    #print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(xTest, yTest), EvaluationsStub.Accuracy(yTest, yTestPredicted)))
 
 EvaluationsStub.ExecuteAll(yTest, yTestPredicted)
