@@ -42,11 +42,10 @@ import LogisticRegressionModel
 model = LogisticRegressionModel.LogisticRegressionModel()
 
 print("Logistic regression model")
-for i in [50000]:
+for i in [50000]:#, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000, 50000]:
     model.fit(xTrain, yTrain, iterations=i, step=0.01)
     yTestPredicted = model.predict(xTest)
     
 
-    #print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(xTest, yTest), EvaluationsStub.Accuracy(yTest, yTestPredicted)))
-
-EvaluationsStub.ExecuteAll(yTest, yTestPredicted)
+    print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(xTest, yTest), EvaluationsStub.Accuracy(yTest, yTestPredicted)))
+    EvaluationsStub.ExecuteAll(yTest, yTestPredicted)

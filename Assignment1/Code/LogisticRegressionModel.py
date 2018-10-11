@@ -7,15 +7,14 @@ class LogisticRegressionModel(object):
         pass
 
     def fit(self, x, y, iterations, step):
-        self.weight0 = .05
-        self.weights = [.05, -.05, .05, -.05, .05]
+        #self.weight0 = .05
+        #self.weights = [.05, -.05, .05, -.05, .05]
 
-        #self.weight0 = .5
-        #self.weights = [.75, .75, .75, .25, .25]
+        self.weight0 = .5
+        self.weights = [.75, .75, .75, .25, .25]
 
         for curr_iter in range(iterations):
-            yPredictions = self.predict(x)
-            #print(yPredictions)
+            yPredictions = self.find_regression(x)
 
             #calculate training loss with respect to weight
             cnt = len(yPredictions)
@@ -32,7 +31,7 @@ class LogisticRegressionModel(object):
                 trainset_loss = summed_loss/cnt
                 self.weights[i] -= (step * trainset_loss) 
                 #print(i,": summed loss-",summed_loss," loss-", trainset_loss, " new weight-", self.weights[i])
-            #print(self.weights)
+            #print(curr_iter,":",summed_loss,",",self.weights)
     
     
 
@@ -40,28 +39,32 @@ class LogisticRegressionModel(object):
 
     def predict(self, x):
         predictions = []
-        cnt = 0
-        for example in x:
-            z = self.weight0 + sum([ example[i] * self.weights[i] for i in range(len(example)) ])
-            yPredicted = self.sigmoid(z)
-            #print(cnt,":",yPredicted)
+        y_Predictions = self.find_regression(x)
+
+        for yPredicted in y_Predictions:
             if yPredicted > .5:
                 predictions.append(1)
             else:
                 predictions.append(0)
-            cnt += 1
         
         return predictions
 
     def sigmoid(self, x):
         return 1.0 / (1.0 + math.exp(-1*x))
 
-    def loss(self, y, yPredicted):
-        pass
-        #losses = []
+    def find_regression(self, x):
+        weighted_values = []
+        for example in x:
+            z = self.weight0 + sum([ example[i] * self.weights[i] for i in range(len(example)) ])
+            weighted_values.append(self.sigmoid(z))
+        return weighted_values
 
-        #for i in range(len(y)):
-        #    print(i,":",yPredicted[i])
-        #    losses[i] = (-1*y[i] * math.log(yPredicted[i])) - ((1 - y[i]) * (math.log(1.0-yPredicted[i])))
+    def loss(self, x, y):
+        losses = []
 
-        #return sum(losses)
+        yPredicted = self.find_regression(x)
+
+        for i in range(len(y)):
+            losses.append((-1*y[i] * math.log(yPredicted[i])) - ((1 - y[i]) * (math.log(1.0-yPredicted[i]))))
+
+        return sum(losses)
