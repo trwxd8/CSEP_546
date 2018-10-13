@@ -1,4 +1,5 @@
 import math
+import numpy as np
 
 class LogisticRegressionModel(object):
     """A model that calculates the logsitics regression analysis."""
@@ -10,11 +11,13 @@ class LogisticRegressionModel(object):
         #self.weight0 = .05
         #self.weights = [.05, -.05, .05, -.05, .05]
 
+        #Initialize weights to arbitrary values
         self.weight0 = .5
         self.weights = [.75, .75, .75, .25, .25]
 
-        for curr_iter in range(iterations):
-            yPredictions = self.find_regression(x)
+        #Go through iteration number of steps for optimizing weights
+        for curr_iter in range(iterations+1):
+            yPredictions = self.calculateSigmoids(x)
 
             #calculate training loss with respect to weight
             cnt = len(yPredictions)
@@ -30,16 +33,19 @@ class LogisticRegressionModel(object):
                 summed_loss = sum([(yPredictions[j] - y[j])*x[j][i] for j in range(cnt)])
                 trainset_loss = summed_loss/cnt
                 self.weights[i] -= (step * trainset_loss) 
-                #print(i,": summed loss-",summed_loss," loss-", trainset_loss, " new weight-", self.weights[i])
-            #print(curr_iter,":",summed_loss,",",self.weights)
     
+            #Include printing of test loss
+            #if(curr_iter % 1000 == 0):
+            #    print(curr_iter,"training loss:",self.loss(xTest, yTest))
+            #if(curr_iter % 1000 == 0 and curr_iter != 0):
+            #    print(curr_iter," training set loss:", self.loss(x, y))
     
 
         return 0
 
     def predict(self, x):
         predictions = []
-        y_Predictions = self.find_regression(x)
+        y_Predictions = self.calculateSigmoids(x)
 
         for yPredicted in y_Predictions:
             if yPredicted > .5:
@@ -49,20 +55,19 @@ class LogisticRegressionModel(object):
         
         return predictions
 
-    def sigmoid(self, x):
-        return 1.0 / (1.0 + math.exp(-1*x))
+    def calculateSigmoids(self, x):
+        yPredicted = []
 
-    def find_regression(self, x):
-        weighted_values = []
         for example in x:
-            z = self.weight0 + sum([ example[i] * self.weights[i] for i in range(len(example)) ])
-            weighted_values.append(self.sigmoid(z))
-        return weighted_values
+            z = self.weight0 + np.dot(example, self.weights)
+            sigmoid = 1.0 / (1.0 + math.exp(-1*z))
+            yPredicted.append(sigmoid)
+        return yPredicted
 
     def loss(self, x, y):
         losses = []
 
-        yPredicted = self.find_regression(x)
+        yPredicted = self.calculateSigmoids(x)
 
         for i in range(len(y)):
             losses.append((-1*y[i] * math.log(yPredicted[i])) - ((1 - y[i]) * (math.log(1.0-yPredicted[i]))))
