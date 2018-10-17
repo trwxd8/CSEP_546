@@ -2,6 +2,8 @@
 # CSEP 546 10/08
 # Assignment 1 - Basic Model Evaluation
 
+import math
+
 def __CheckEvaluationInput(y, yPredicted):
     # Check sizes
     if(len(y) != len(yPredicted)):
@@ -153,3 +155,10 @@ def ExecuteAll(y, yPredicted):
     print("Recall:", Recall(y, yPredicted))
     print("FPR:", FalsePositiveRate(y, yPredicted))
     print("FNR:", FalseNegativeRate(y, yPredicted))
+
+
+def calculate95PercentConfidenceBounds(self, accuracy, n):
+    lowerBound = accuracy - 1.96 * math.sqrt((accuracy * (1 - accuracy) / n))
+    upperBound = accuracy + 1.96 * math.sqrt((accuracy * (1 - accuracy) / n))
+
+    return (lowerBound, upperBound)

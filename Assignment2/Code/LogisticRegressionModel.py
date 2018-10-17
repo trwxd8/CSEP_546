@@ -1,4 +1,5 @@
 import math
+import random
 import numpy as np
 
 class LogisticRegressionModel(object):
@@ -8,14 +9,16 @@ class LogisticRegressionModel(object):
         pass
 
     def fit(self, x, y, iterations, step):
-        #self.weight0 = .05
-        #self.weights = [.05, -.05, .05, -.05, .05]
-
         #Initialize weights to arbitrary values
-        self.weight0 = .5
-        #self.weights = [.75, .75, .75, .25, .25]
-        self.weights = [.75, .75, .75, .25]
+        #self.weight0 = .5
+        self.weight0 = random.uniform(-.05, .05)
 
+        w_cnt = len(x[0])
+        self.weights = []
+        for i in range(w_cnt):
+            self.weights.append(random.uniform(-.05, .05))
+        #self.weights = [.75, .75, .75, .25, .25]
+            #print(self.weights)
         #Go through iteration number of steps for optimizing weights
         for curr_iter in range(iterations+1):
             yPredictions = self.calculateSigmoids(x)

@@ -38,8 +38,8 @@ class BagOfWordsModel(object):
         #print(features)
 
         sorted_vocabCount = sorted(vocabCount.items(), key=lambda kv: kv[1], reverse=True)
-        print(sorted_vocabCount[:n])
-        return sorted_vocabCount
+        topn_results = sorted_vocabCount[:n]
+        return topn_results
 
     def MutualInformationFeatureSelection(self, x, y, n):
         cnt = len(y)
@@ -48,33 +48,74 @@ class BagOfWordsModel(object):
         mutualInfo = {}
 
         for word in self.vocabulary:
-            word_cnt = word_pos = word_neg = currMI = 0
+            word_present = word_pos = word_neg = noword_pos = noword_neg = currMI = 0
             
             for i in range(cnt):
-                example = x[i]
+                example = x[i].split()
 
                 if word in example:
-                    word_cnt += 1
+                    word_present += 1
                     if y[i] == 1:
                         word_pos += 1
                     else:
                         word_neg += 1
+                else:
+                    if y[i] == 1:
+                        noword_pos += 1
+                    else:
+                        noword_neg += 1
 
-            print(cnt," - pos:", pos_cnt, " neg:",neg_cnt)
-            print(word)
+            word_missing = cnt - word_present
 
-            if word_cnt != 0:
-                print(word_cnt," - pos:",word_pos, " neg:",word_neg)
+            #Calculate P(word,1) and P(word,0)
+            prob_word_pos =  self.prob_func(word_pos, cnt)
+            prob_word_neg =  self.prob_func(word_neg, cnt)
+            prob_noword_pos =  self.prob_func(noword_pos, cnt)
+            prob_noword_neg =  self.prob_func(noword_neg, cnt)
+            prob_pos = self.prob_func(pos_cnt, cnt)
+            prob_neg = self.prob_func(neg_cnt, cnt)
+            prob_word = self.prob_func(word_present, cnt)
+            prob_noword = self.prob_func(word_missing, cnt)
 
-                #Calculate P(word,1) and P(word,0)
-                prob_word_pos =  (word_pos + 1.0) / (word_cnt + 2.0)
-                prob_word_neg = (word_neg + 1.0) / (word_cnt + 2.0)
-
-                currMI += prob_word_pos * math.log2(prob_word_pos / (word_cnt * pos_cnt * 1.0) )
-                currMI += prob_word_neg * math.log2(prob_word_neg / (word_cnt * neg_cnt * 1.0) )
+            currMI += prob_word_pos * math.log2(prob_word_pos / (prob_word * prob_pos) )
+            currMI += prob_word_neg * math.log2(prob_word_neg / (prob_word * prob_neg) )
+            currMI += prob_noword_pos * math.log2(prob_noword_pos / (prob_noword * prob_pos) )
+            currMI += prob_noword_neg * math.log2(prob_noword_neg / (prob_noword * prob_neg) )
             mutualInfo[word] = currMI
-            print(word,":",currMI)
 
         sorted_mutualInfo = sorted(mutualInfo.items(), key=lambda kv: kv[1], reverse=True)
-        print(sorted_mutualInfo[:n])
-        return sorted_mutualInfo
+        topn_results = sorted_mutualInfo[:n]
+        return topn_results
+
+    def prob_func(self, observed, total):
+        return (observed + 1.0) / (total + 2.0)
+
+    def FeaturizeByWords(self, xTrainRaw, xTestRaw, words):
+        # featurize the training data, may want to do multiple passes to count things.
+        xTrain = []
+        for x in xTrainRaw:
+            features = []
+            # Have features for a few words
+            for key_word in words:
+                if key_word in x:
+                    features.append(1)
+                else:
+                    features.append(0)
+            #print(features)
+            xTrain.append(features)
+
+        # now featurize test using any features discovered on the training set. Don't use the test set to influence which features to use.
+        xTest = []
+        for x in xTestRaw:
+            features = []
+
+            # Have features for a few words
+            for word in words:
+                if word in x:
+                    features.append(1)
+                else:
+                    features.append(0)
+            #print(features)
+            xTest.append(features)
+
+        return (xTrain, xTest)

@@ -51,19 +51,27 @@ model = LogisticRegressionModel.LogisticRegressionModel()
 
 #############################
 import BagOfWordsModel
-model = BagOfWordsModel.BagOfWordsModel()
+bagmodel = BagOfWordsModel.BagOfWordsModel()
 
-xTrainRaw = []
-yTrainRaw = []
-xTrainRaw.append("this me")
-xTrainRaw.append("that you")
-xTrainRaw.append("this her")
-yTrainRaw.append(1)
-yTrainRaw.append(0)
-yTrainRaw.append(1)
-xTestRaw = []
-yTestRaw = []
+print("Running Bag of Words")
+topN = 10
 
-model.fillVocabulary(xTrainRaw)
-#model.FrequencyFeatureSelection(xTestRaw, 10)
-model.MutualInformationFeatureSelection(xTestRaw, yTestRaw, 10)
+bagmodel.fillVocabulary(xTrainRaw)
+results = bagmodel.FrequencyFeatureSelection(xTestRaw, topN)
+#results = bagmodel.MutualInformationFeatureSelection(xTrainRaw, yTrainRaw, 10)
+
+print(results)
+
+words = []
+for i in range(topN):
+    words.append(results[i][0])
+
+print("Logistic regression model - Using Bag of model (frequency")
+xTrain, xTest = bagmodel.FeaturizeByWords(xTrainRaw, xTestRaw, words)
+
+for i in [50000]:
+    model.fit(xTrain, yTrain, iterations=i, step=0.01)
+    yTestPredicted = model.predict(xTest)
+    
+    print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(xTest, yTest), EvaluationsStub.Accuracy(yTest, yTestPredicted)))
+    EvaluationsStub.ExecuteAll(yTest, yTestPredicted)
