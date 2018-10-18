@@ -48,8 +48,7 @@ def TrainTestSplit(x, y, percentTest = .25):
     return (xTrain, yTrain, xTest, yTest)
 
 def Featurize(xTrainRaw, xTestRaw):
-    words = ['call', 'your'] 
-    #'to', 
+    words = ['call', 'to', 'your']
 
     # featurize the training data, may want to do multiple passes to count things.
     xTrain = []
@@ -81,6 +80,7 @@ def Featurize(xTrainRaw, xTestRaw):
     xTest = []
     for x in xTestRaw:
         features = []
+        
         # Have a feature for longer texts
         if(len(x)>40):
             features.append(1)
@@ -99,6 +99,7 @@ def Featurize(xTrainRaw, xTestRaw):
                 features.append(1)
             else:
                 features.append(0)
+
         xTest.append(features)
 
     return (xTrain, xTest)

@@ -33,6 +33,11 @@ def Accuracy(y, yPredicted):
 
     return sum(correct)/len(correct)
 
+def calculate95PercentConfidenceBounds(Accuracy, n):
+    lowerBound = Accuracy - 1.96 * math.sqrt((Accuracy * (1 - Accuracy) / n))
+    upperBound = Accuracy + 1.96 * math.sqrt((Accuracy * (1 - Accuracy) / n))
+    return ( lowerBound, upperBound ) 
+
 #Calculate true positive and false positive to calculate
 #Precision value, true positive / (true positive + false positive)
 def Precision(y, yPredicted):
@@ -155,10 +160,3 @@ def ExecuteAll(y, yPredicted):
     print("Recall:", Recall(y, yPredicted))
     print("FPR:", FalsePositiveRate(y, yPredicted))
     print("FNR:", FalseNegativeRate(y, yPredicted))
-
-
-def calculate95PercentConfidenceBounds(self, accuracy, n):
-    lowerBound = accuracy - 1.96 * math.sqrt((accuracy * (1 - accuracy) / n))
-    upperBound = accuracy + 1.96 * math.sqrt((accuracy * (1 - accuracy) / n))
-
-    return (lowerBound, upperBound)

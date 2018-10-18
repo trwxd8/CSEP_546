@@ -5,15 +5,14 @@ class BagOfWordsModel(object):
 
     def __init__(self):
         self.vocabulary = []
+        self.preFeaturedWords = []#['call', 'to', 'your']
         pass
 
     def fillVocabulary(self, x):
-        cnt = 0
-        for example in x:
+         for example in x:
             curr_words = example.split()
             for word in curr_words:
-                if word not in self.vocabulary:
-                    cnt += 1
+                if word not in self.vocabulary and word not in self.preFeaturedWords:
                     #print(word)
                     self.vocabulary.append(word)
 
@@ -30,12 +29,6 @@ class BagOfWordsModel(object):
             for word in curr_words:
                 if word in vocabCount:
                     vocabCount[word] += 1
-                    #print(word,":", vocabCount[word])
-                    #curr_features.append(1)
-                #else:
-                #    curr_features.append(0)
-            #features.append(curr_features)
-        #print(features)
 
         sorted_vocabCount = sorted(vocabCount.items(), key=lambda kv: kv[1], reverse=True)
         topn_results = sorted_vocabCount[:n]
@@ -51,9 +44,9 @@ class BagOfWordsModel(object):
             word_present = word_pos = word_neg = noword_pos = noword_neg = currMI = 0
             
             for i in range(cnt):
-                example = x[i].split()
+                example = x[i]
 
-                if word in example:
+                if word in example.split():
                     word_present += 1
                     if y[i] == 1:
                         word_pos += 1
@@ -84,6 +77,7 @@ class BagOfWordsModel(object):
             mutualInfo[word] = currMI
 
         sorted_mutualInfo = sorted(mutualInfo.items(), key=lambda kv: kv[1], reverse=True)
+        
         topn_results = sorted_mutualInfo[:n]
         return topn_results
 

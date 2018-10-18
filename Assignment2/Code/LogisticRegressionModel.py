@@ -1,5 +1,4 @@
 import math
-import random
 import numpy as np
 
 class LogisticRegressionModel(object):
@@ -9,43 +8,25 @@ class LogisticRegressionModel(object):
         pass
 
     def fit(self, x, y, iterations, step):
-        #Initialize weights to arbitrary values
-        #self.weight0 = .5
-        self.weight0 = random.uniform(-.05, .05)
-
+        
+		#Create random weights bounded between -.05 and .05
         w_cnt = len(x[0])
-        self.weights = []
-        for i in range(w_cnt):
-            self.weights.append(random.uniform(-.05, .05))
-        #self.weights = [.75, .75, .75, .25, .25]
-            #print(self.weights)
+        self.weights = np.multiply(np.subtract(np.random.ranf(w_cnt), .5), .1)
+
         #Go through iteration number of steps for optimizing weights
-        for curr_iter in range(iterations+1):
+        for curr_iter in range(iterations):
             yPredictions = self.calculateSigmoids(x)
 
             #calculate training loss with respect to weight
             cnt = len(yPredictions)
-            w_cnt = len(self.weights)
-
-            #Adjust weight0
-            summed_loss = sum([(yPredictions[j] - y[j]) for j in range(cnt)])
-            trainset_loss = summed_loss/cnt
-            self.weight0 -= (step * trainset_loss)
-
-            #Adjust weight for each
-            for i in range(w_cnt):
-                summed_loss = sum([(yPredictions[j] - y[j])*x[j][i] for j in range(cnt)])
-                trainset_loss = summed_loss/cnt
-                self.weights[i] -= (step * trainset_loss) 
-    
-            #Include printing of test loss
-            #if(curr_iter % 1000 == 0):
-            #    print(curr_iter,"training loss:",self.loss(xTest, yTest))
-            #if(curr_iter % 1000 == 0 and curr_iter != 0):
-            #    print(curr_iter," training set loss:", self.loss(x, y))
-    
-
-        return 0
+			#Transpose the x values so dot multiply can be used
+            t_x = np.matrix.transpose(x)
+			
+            #for i in range(w_cnt):
+            #    summed_loss = sum([(yPredictions[j]-y[j])*x[j][i] for j in range(cnt)])
+            #    trainset_loss = summed_loss/cnt
+            #    self.weights[i] -= (step * trainset_loss) 
+            self.weights = np.subtract(self.weights, np.multiply(step, np.divide(np.dot(t_x, np.subtract(yPredictions, y)), cnt)))
 
     def predict(self, x):
         predictions = []
@@ -60,21 +41,19 @@ class LogisticRegressionModel(object):
         return predictions
 
     def calculateSigmoids(self, x):
-        yPredicted = []
-
-        for example in x:
-            #print("X:",example," weights:", self.weights)
-            z = self.weight0 + np.dot(example, self.weights)
-            sigmoid = 1.0 / (1.0 + math.exp(-1*z))
-            yPredicted.append(sigmoid)
-        return yPredicted
-
+        #yPredicted = []
+        #zList = np.dot(x, self.weights)
+		
+        #for z in zList:
+        #    sigmoid = 1.0 / (1.0 + math.exp(-1*z))
+        #    yPredicted.append(sigmoid)
+        #return yPredicted
+        return np.divide(1.0, np.add(1.0, np.exp(np.multiply(-1.0, np.dot(x, self.weights)))))
+		
     def loss(self, x, y):
-        losses = []
-
         yPredicted = self.calculateSigmoids(x)
-
-        for i in range(len(y)):
-            losses.append((-1*y[i] * math.log(yPredicted[i])) - ((1 - y[i]) * (math.log(1.0-yPredicted[i]))))
-
-        return sum(losses)
+        #losses = []
+        #for i in range(len(y)):
+        #    losses.append((-1*y[i] * math.log(yPredicted[i])) - ((1 - y[i]) * (math.log(1.0-yPredicted[i]))))
+        #return sum(losses)
+        return np.sum(np.subtract(np.multiply(-y, np.log(yPredicted)), np.multiply(np.subtract(1, y), np.log(np.subtract(1.0,yPredicted)))))
