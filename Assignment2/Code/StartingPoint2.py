@@ -63,13 +63,13 @@ np_yTest = np.asarray(yTest)
 #############################
 import BagOfWordsModel
 bagmodel = BagOfWordsModel.BagOfWordsModel()
-"""
+
 print("Running Bag of Words")
 topN = 10
 
 bagmodel.fillVocabulary(xTrainRaw)
-results = bagmodel.FrequencyFeatureSelection(xTrainRaw, topN)
-#results = bagmodel.MutualInformationFeatureSelection(xTrainRaw, yTrainRaw, topN)
+#results = bagmodel.FrequencyFeatureSelection(xTrainRaw, topN)
+results = bagmodel.MutualInformationFeatureSelection(xTrainRaw, yTrainRaw, topN)
 
 print(results)
 
@@ -90,15 +90,43 @@ np_xTest = np.insert(np_xTestFullFeautures, 0, 1, axis = 1)
 
 for i in [50000]:
     model.fit(np_xTrain, np_yTrain, iterations=i, step=0.01)
-    yTestPredicted = model.predict(np_xTest)
+    #yTestPredicted = model.predict(np_xTest)
 
-    print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(np_xTest, np_yTest), EvaluationsStub.Accuracy(np_yTest, yTestPredicted)))
-    EvaluationsStub.ExecuteAll(np_yTest, yTestPredicted)
+    #print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(np_xTest, np_yTest), EvaluationsStub.Accuracy(np_yTest, yTestPredicted)))
+    #EvaluationsStub.ExecuteAll(np_yTest, yTestPredicted)
 
-    accuracy = EvaluationsStub.Accuracy(np_yTest, yTestPredicted)
-    y_len =  len(yTestPredicted)
-    (lowerBounds, upperBounds) = EvaluationsStub.calculate95PercentConfidenceBounds(accuracy, y_len)
-    print(i,": ", accuracy, " l:", lowerBounds, " u:", upperBounds)
+    #accuracy = EvaluationsStub.Accuracy(np_yTest, yTestPredicted)
+    #y_len =  len(yTestPredicted)
+    #(lowerBounds, upperBounds) = EvaluationsStub.calculate95PercentConfidenceBounds(accuracy, y_len)
+    #print(i,": ", accuracy, " l:", lowerBounds, " u:", upperBounds)
+
+    #Worst false positives
+    falsePositives = model.predictWorstFPSigmoidsValues(np_xTest, np_yTest, 20)
+    print("False Positive Raw")
+    print(falsePositives)
+
+    print("False Positive Results:")
+    FPresults = []
+    for j in range(20):
+        curr = falsePositives[j][0]
+        print(curr,":",yTestRaw[curr],"-",falsePositives[j][1],"=",xTestRaw[curr])
+        FPresults.append(xTestRaw[curr])
+
+    #worst false negatives
+    falseNegatives = model.predictWorstFNSigmoidsValues(np_xTest, np_yTest, 20)
+    print("False Negative Raw")
+    print(falseNegatives)
+
+    print("False Negative Results:")   
+    FNresults = []
+    for j in range(20):
+        curr = falseNegatives[j][0]
+        print(curr,":",yTestRaw[curr],"-",falseNegatives[j][1],"=",xTestRaw[curr])
+        FPresults.append(xTestRaw[curr])
+
+
+
+
 """
 #############################
 import CrossValidationSupport
@@ -142,4 +170,4 @@ for i in range(k):
 
 accuracy = correct_cnt / full_cnt
 (lowerBounds, upperBounds) = EvaluationsStub.calculate95PercentConfidenceBounds(accuracy, full_cnt)
-print("MI: ", accuracy, " l:", lowerBounds, " u:", upperBounds) 
+print("MI: ", accuracy, " l:", lowerBounds, " u:", upperBounds) """

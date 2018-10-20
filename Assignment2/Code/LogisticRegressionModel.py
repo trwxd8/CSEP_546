@@ -40,6 +40,35 @@ class LogisticRegressionModel(object):
         
         return predictions
 
+    def predictWorstFPSigmoidsValues(self, x, y, n):
+        predictionScores = {}
+
+        y_Predictions = self.calculateSigmoids(x) 
+        #results = np.subtract(y, y_Predictions)
+        yLen = len(y_Predictions)
+        for i in range(yLen):
+            #pull out positive calculations
+            if y[i] == 0:
+                predictionScores[i] = y_Predictions[i]
+
+        #sort by largest difference
+        sorted_predictionScores = sorted(predictionScores.items(), key=lambda kv: kv[1], reverse=True)
+        return sorted_predictionScores[:n]
+
+    def predictWorstFNSigmoidsValues(self, x, y, n):
+        predictionScores = {}
+
+        y_Predictions = self.calculateSigmoids(x) 
+        #results = np.subtract(y, y_Predictions)
+        yLen = len(y_Predictions)
+        for i in range(yLen):
+            #pull out negative calculations
+            if y[i] == 1:
+                predictionScores[i] = y_Predictions[i]
+        sorted_predictionScores = sorted(predictionScores.items(), key=lambda kv: kv[1])
+        return sorted_predictionScores[:n]
+
+
     def calculateSigmoids(self, x):
         #yPredicted = []
         #zList = np.dot(x, self.weights)
