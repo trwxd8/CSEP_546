@@ -61,7 +61,7 @@ np_yTest = np.asarray(yTest)
 #    print("Model runtime:", end-start)
 
 #############################
-import BagOfWordsModel
+"""import BagOfWordsModel
 bagmodel = BagOfWordsModel.BagOfWordsModel()
 
 print("Running Bag of Words")
@@ -101,3 +101,14 @@ for currThreshold in thresholds :
 
         print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(np_xTest, np_yTest), accuracy))
         EvaluationsStub.ExecuteAll(np_yTest, yTestPredicted)
+"""
+#############################
+import DecisionTreeModel
+decisionTree = DecisionTreeModel.DecisionTreeModel()
+minSplits = 100
+
+np_xTrain = np.asarray(xTrain)
+np_xTest = np.asarray(xTest)
+
+decisionTree.fit(np_xTrain, np_yTrain, minSplits)
+yPredicted = decisionTree.predict(np_xTest) 
