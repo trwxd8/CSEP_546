@@ -104,11 +104,22 @@ for currThreshold in thresholds :
 """
 #############################
 import DecisionTreeModel
+#decisionTree = DecisionTreeModel.DecisionTreeUnitTest()
+#decisionTree.ExecuteTest()
 decisionTree = DecisionTreeModel.DecisionTreeModel()
-minSplits = 100
+
+#minSplits = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000]
+minSplits = [100]
 
 np_xTrain = np.asarray(xTrain)
 np_xTest = np.asarray(xTest)
 
-decisionTree.fit(np_xTrain, np_yTrain, minSplits)
-yPredicted = decisionTree.predict(np_xTest) 
+for currSplit in minSplits:   
+    print("Minimum Split:", currSplit)
+    decisionTree.fit(np_xTrain, np_yTrain, currSplit)
+    yTestPredicted = decisionTree.predict(np_xTest) 
+    EvaluationsStub.ExecuteAll(np_yTest, yTestPredicted)
+    accuracy = EvaluationsStub.Accuracy(np_yTest, yTestPredicted)
+    y_len =  len(yTestPredicted)
+    (lowerBounds, upperBounds) = EvaluationsStub.calculate95PercentConfidenceBounds(accuracy, y_len)
+    print("Accuracy:", accuracy, " Lower Bound:", lowerBounds, " Upper Bound:", upperBounds)
