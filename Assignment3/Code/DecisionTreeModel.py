@@ -12,87 +12,85 @@ class DecisionTreeModel(object):
         self.minSplits = minSplits
         np_x = np.asarray(x)
         np_y = np.asarray(y)
+        bitmap = np.ones(len(x[0]))
 
-        cntFeatures = len(x[0])
-        bitmap = []
-        #Calculate information gain for each feature
-        for idx in range(cntFeatures):
-            bitmap.append(1)
-
+        #Start decision tree model
         self.root = self.growTree(np_x, np_y, bitmap, 0)
         pass
 
-    def predict(self, x):
+    def predict(self, x, predictionThreshold):
         predictions = []        
         for example in x:
-            predictions.append(self.predictMessage(example, self.root))
+            predictions.append(self.predictMessage(example, self.root, predictionThreshold))
         return predictions
     
-    def predictMessage(self, example, node):
-        if node.Feature == None:
-            return node.Value
-        elif example[node.Feature] < 0.5:
-            return self.predictMessage(example, node.LeftNode)
+    def predictMessage(self, example, node, predictionThreshold):
+        #If a leaf has been reached, return the value
+        if node.Feature == None:      
+            return 0 if node.Value < predictionThreshold else 1
+
+        #Otherwise, descend in the tree, choosing the direction based on the feature value
+        elif example[node.Feature] < node.threshold:
+            return self.predictMessage(example, node.LeftNode, predictionThreshold)
         else:
-            return self.predictMessage(example, node.RightNode)
+            return self.predictMessage(example, node.RightNode, predictionThreshold)
 
     def growTree(self, x, y, bitmap, level):
-        cnt = len(y)
+        #print("level:",level)
+        value, counts = np.unique(y, return_counts=True)
+        instanceDict = dict(zip(value, counts))
+        yLen = len(y)
 
-        #print("curr split at level ",level,": x-",x.shape," y-",y.shape)
-        #print(bitmap)
-
-        #If below minimum threshold, return value that occurs most 
-        if cnt < self.minSplits or (np.isin(1, bitmap) == False):
-            value, counts = np.unique(y, return_counts=True)
-            instanceDict = dict(zip(value, counts))
-            #print(instanceDict)
-
+        """#If below minimum threshold/no more features to split on, return the majority value 
+        if len(y) < self.minSplits or (np.isin(1, bitmap) == False):
+            #Set count values of no zeroes/ones are found
             if np.isin(0, y) == False:
-                #print("Only 1s left")
                 zeroCnt = -1
             else:
                 zeroCnt = instanceDict[0]
             if np.isin(1, y) == False:
-                #print("Only 0s left")
                 oneCnt = -1
             else:
                 oneCnt = instanceDict[1]
-            #print("0:",zeroCnt," 1:",oneCnt)
-            #input("Enter input:")
-            return DecisionTreeNode(None, None, None, 0 if zeroCnt > oneCnt else 1)
-        
+
+            #return DecisionTreeNode(None, None, None, 0 if zeroCnt > oneCnt else 1, None)
+            return DecisionTreeNode(None, None, None, instanceDict, None)
+
         #If all values are the same, return node of value
         elif np.isin(1, y) == False:
-            #print("Only 0s left")
-            #input("Enter input:")
-            return DecisionTreeNode(None, None, None, 0)
+            #return DecisionTreeNode(None, None, None, 0, None)
+            return DecisionTreeNode(None, None, None, instanceDict, None)
         elif np.isin(0, y) == False:
-            #print("Only 1s left")
-            #input("Enter input:")
-            return DecisionTreeNode(None, None, None, 1)
+            #return DecisionTreeNode(None, None, None, 1, None)
+            return DecisionTreeNode(None, None, None, instanceDict, None)
+        """
+        if yLen < self.minSplits or np.isin(1, bitmap) == False or np.isin(0, y) == False or np.isin(1, y) == False:
+            if np.isin(1, y) == False:
+                oneCnt = 0
+            else:
+                oneCnt = instanceDict[1]
+            return DecisionTreeNode(None, None, None, (oneCnt + 1) / (yLen + 2), None)
 
+        #print(bitmap)
         #Pick feature to split on 
-        else:
-            #print("Bitmap of features currently ", bitmap)
-            xIdx = self.PickBestSplit(x, y, bitmap)
-            #print("Best index is ",xIdx)
-            if xIdx == -1:
-                #print("All information gains are negative...")
-                return None
+        xIdx = self.PickBestSplit(x, y, bitmap)
+        #Adjust values if no positive information gain is found
+        if xIdx == -1:
+            if np.count_nonzero(bitmap) > 0:
+                xIdx = np.where(bitmap == 1)[0][0]
+        if xIdx != 0:
             bitmap[xIdx] = 0
 
-            #Split datasets on value for feature
-            (xSplit0, ySplit0) = self.SplitByFeature(x, y, xIdx, 0)
-            (xSplit1, ySplit1) = self.SplitByFeature(x, y, xIdx, 1)
-            #print("0 split: x-",xSplit0.shape," y-",ySplit0.shape)
-            #print("1 split: x-",xSplit1.shape," y-",ySplit1.shape)           
-            #input("Enter input:")
+        #Split datasets on value for feature
+        (threshold, xSplitLeft, ySplitLeft, xSplitRight, ySplitRight) = self.SplitByFeature(x, y, xIdx)
+        #print("0 split: x-",xSplitLeft.shape," y-",ySplitLeft.shape)
+        #print("1 split: x-",xSplitRight.shape," y-",ySplitRight.shape)           
+        #input("Enter input:")
 
-        leftBitmap = copy.deepcopy(bitmap)
-        rightBitmap = copy.deepcopy(bitmap)
+        leftBitmap = np.asarray(copy.deepcopy(bitmap))
+        rightBitmap = np.asarray(copy.deepcopy(bitmap))
 
-        return DecisionTreeNode(self.growTree(xSplit0, ySplit0, leftBitmap, level + 1), self.growTree(xSplit1, ySplit1, rightBitmap, level + 1), xIdx, -1)
+        return DecisionTreeNode(self.growTree(xSplitLeft, ySplitLeft, leftBitmap, level + 1), self.growTree(xSplitRight, ySplitRight, rightBitmap, level + 1), xIdx, None, threshold)
 
     def PickBestSplit(self, x, y, bitmap):
         infoGains = []
@@ -106,12 +104,13 @@ class DecisionTreeModel(object):
             else:
                 #print("finding gain for ",idx,"/",cntFeatures)
                 infoGains.append(self.InformationGains(x, y, idx))
-        print(infoGains)
+        #print(infoGains)
         maxIdx = np.argmax(infoGains)
-        if infoGains[maxIdx] < 0:
-            return -1
-        else:
-            return maxIdx 
+        return maxIdx
+        #if infoGains[maxIdx] < 0:
+        #    return -1
+        #else:
+        #    return maxIdx 
 
     def InformationGains(self, x, y, idx):
         entropyY = self.Entropy(y)
@@ -127,73 +126,83 @@ class DecisionTreeModel(object):
         cnt = np.size(y)
 
         for currKey in instanceDict:
-            currProb = (instanceDict[currKey]) / (cnt)
+            currProb = (instanceDict[currKey] + 1) / (cnt + 2)
             sumEntropy += currProb * math.log2(currProb)
 
         return -sumEntropy
 
     def Loss(self, x, y, idx):
         #print("Loss at ",idx)
-        yClassifications = {}
         xTransposed = np.transpose(x)
         xIdxDataset = xTransposed[idx]
         value, counts = np.unique(xIdxDataset, return_counts=True)
         instanceDict = dict(zip(value, counts))
         xLen = xIdxDataset.shape[0]
+        lossSum = 0
 
-        #Get set of x values for 
+        #Get set of y values for each x feature value
         for currKey in instanceDict:
             currY = []
             for i in range(xLen):
                 if xIdxDataset[i] == currKey:
                     currY.append(y[i])
-            yClassifications[currKey] = currY
 
-        lossSum = 0
-        #Add loss of 
-        for currKey in instanceDict:
-            currLoss = self.Entropy(yClassifications[currKey]) * instanceDict[currKey]
-            #print("Loss for ",currKey, "is ", currLoss)
-            lossSum += currLoss
+            #Calculate the entropy for current value
+            lossSum += self.Entropy(currY) * instanceDict[currKey]
         return lossSum / xLen
 
 
     #Function to extract subset of data based on value for feature at idx
-    def SplitByFeature(self, x, y, idx, value):
-        xSplit = []
-        ySplit = []
+    def SplitByFeature(self, x, y, idx):
+        xSplitLeft = []
+        ySplitLeft = []
+        xSplitRight = []
+        ySplitRight = []
 
-        cnt = len(x)
+        xTransposed = np.transpose(x)
+        xIdxDataset = xTransposed[idx]
+
+        min = np.amin(xIdxDataset)
+        max = np.amax(xIdxDataset)
+        threshold = min + (max - min) / 2
+        #print("min:",min," max:",max," threshold:",)
+
+        cnt = len(y)
         for curr in range(cnt):
-            if x[curr][idx] == value:
-                xSplit.append(x[curr])
-                ySplit.append(y[curr])
-        return (np.asarray(xSplit), np.asarray(ySplit))
+            if x[curr][idx] < threshold:
+                xSplitLeft.append(x[curr])
+                ySplitLeft.append(y[curr])
+            else:
+                xSplitRight.append(x[curr])
+                ySplitRight.append(y[curr])
+        return (threshold, np.asarray(xSplitLeft), np.asarray(ySplitLeft), np.asarray(xSplitRight), np.asarray(ySplitRight))
 
-    def PrintTree(self):
-        self.printNode(self.root, "")
+    def PrintTree(self, threshold):
+        self.printNode(self.root, "", threshold)
 
-    def printNode(self, node, spacing):
+    def printNode(self, node, spacing, predictionThreshold):
         if node == None:
             return
         if node.Feature == None:
-            print(spacing + str(node.Value))
+            nodeValue = 0 if node.Value < predictionThreshold else 1
+            print(spacing + str(nodeValue))
             return
         
-        print(spacing + "Feature ",node.Feature,":")           
+        print(spacing + "Feature",node.Feature+1,":")           
         newSpacing = spacing + "     "
-        print(spacing,"  >= 0.5")
-        self.printNode(node.LeftNode, newSpacing)
-        print(spacing,"  <  0.5")
-        self.printNode(node.RightNode, newSpacing)
+        print(spacing,"  <", node.threshold)
+        self.printNode(node.LeftNode, newSpacing, predictionThreshold)
+        print(spacing,"  >=", node.threshold)
+        self.printNode(node.RightNode, newSpacing, predictionThreshold)
 
 class DecisionTreeNode(object):
     
-    def __init__(self, leftNode, RightNode, idx, value):
+    def __init__(self, leftNode, RightNode, idx, value, threshold):
         self.LeftNode = leftNode
         self.RightNode = RightNode
         self.Feature = idx
         self.Value = value
+        self.threshold = threshold
 
 class DecisionTreeUnitTest(object):
     def __init__(self):
@@ -218,3 +227,4 @@ class DecisionTreeUnitTest(object):
         #print("y:", self.y)
         decisionTree = DecisionTreeModel()
         decisionTree.PickBestSplit(self.x, self.y, [1, 1, 1, 1])
+

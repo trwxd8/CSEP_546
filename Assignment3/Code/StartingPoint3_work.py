@@ -77,7 +77,7 @@ words = []
 for i in range(topN):
     words.append(results[i][0])
 
-print("Logistic regression model - Using Bag of model")
+print("Logistic regression model - Using Bag of model + handcrafted")
 xTrainMI, xTestMI = bagmodel.FeaturizeByWords(xTrainRaw, xTestRaw, words)
 
 #np_xTrainFullFeautures = np.hstack((np.asarray(xTrain), np.asarray(xTrainMI)))
@@ -88,12 +88,18 @@ np_xTestFullFeautures = np.asarray(xTestMI)
 np_xTrain = np.insert(np_xTrainFullFeautures, 0, 1, axis = 1)
 np_xTest = np.insert(np_xTestFullFeautures, 0, 1, axis = 1)
 
-for i in [50000]:
-    model.fit(np_xTrain, np_yTrain, iterations=i, step=0.01)
-    yTestPredicted = model.predict(np_xTest)
+thresholds = [1]
+#for i in range(0,100):
+#    thresholds.append(i*.01)
 
+for i in [50000]:
+    for currThreshold in thresholds:
+        #print("Threshold is at ",currThreshold)
+        model.fit(np_xTrain, np_yTrain, currThreshold, iterations=i, step=0.01)
+        yTestPredicted = model.predict(np_xTest)
+        print(currThreshold,"-",EvaluationsStub.FalsePositiveRate(np_yTest, yTestPredicted),"-",EvaluationsStub.FalseNegativeRate(np_yTest, yTestPredicted))
     #print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(np_xTest, np_yTest), EvaluationsStub.Accuracy(np_yTest, yTestPredicted)))
-    EvaluationsStub.ExecuteAll(np_yTest, yTestPredicted)
+    #EvaluationsStub.ExecuteAll(np_yTest, yTestPredicted)
 
     #accuracy = EvaluationsStub.Accuracy(np_yTest, yTestPredicted)
     #y_len =  len(yTestPredicted)
@@ -101,11 +107,11 @@ for i in [50000]:
     #print(i,": ", accuracy, " l:", lowerBounds, " u:", upperBounds)
 
     #Worst false positives
-    falsePositives = model.predictWorstFPSigmoidsValues(np_xTest, np_yTest, 20)
+    #falsePositives = model.predictWorstFPSigmoidsValues(np_xTest, np_yTest, 20)
     #print("False Positive Raw")
     #print(falsePositives)
 
-    print("False Positive Results:")
+    """print("False Positive Results:")
     FPresults = []
     for j in range(len(falsePositives)):
         curr = falsePositives[j][0]
@@ -123,7 +129,7 @@ for i in [50000]:
         curr = falseNegatives[j][0]
         print(curr,":",yTestRaw[curr],"-",falseNegatives[j][1],"=",xTestRaw[curr])
         FPresults.append(xTestRaw[curr])
-
+"""
 
 
 

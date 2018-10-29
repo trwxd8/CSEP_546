@@ -7,7 +7,7 @@ class LogisticRegressionModel(object):
     def __init__(self):
         pass
 
-    def fit(self, x, y, iterations, step, threshold):
+    def fit(self, x, y, threshold, iterations, step):
         
 		#Create random weights bounded between -.05 and .05
         w_cnt = len(x[0])
@@ -21,7 +21,7 @@ class LogisticRegressionModel(object):
             #calculate training loss with respect to weight
             cnt = len(yPredictions)
 			#Transpose the x values so dot multiply can be used
-            t_x = np.matrix.transpose(x)
+            t_x = np.transpose(x)
 			
             #for i in range(w_cnt):
             #    summed_loss = sum([(yPredictions[j]-y[j])*x[j][i] for j in range(cnt)])
