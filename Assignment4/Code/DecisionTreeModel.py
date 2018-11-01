@@ -3,25 +3,85 @@ import math
 import numpy as np
 import random as rand
 
+class DecisionForestModel(object):
+    def __init__(self):
+        self.forest = []
+        pass
+
+    def predictForest(self, x, predictionThreshold):
+        predictions = []
+        for example in x:
+            votes = []
+            for tree in self.forest:
+                votes.append(tree.predictMessage(example, tree.root, predictionThreshold))
+            #print(votes)
+            predictions.append(0 if votes.count(0) > votes.count(1) else 1)
+        return predictions
+
+    def growForest(self, x, y, numTrees, minSplit, baggingFlag, featureRestriction, seed):
+
+        print("Growing forest with ",numTrees," trees, minsplit:",minSplit," bagging:",baggingFlag," feature restriction:",featureRestriction)
+
+        rand.seed(seed)
+
+        forest = []
+        for i in range(numTrees):
+            
+            #create modified sets of X and Y if bagging applied
+            if baggingFlag == True:
+                (x, y) = self.bagDataset(x, y, seed)
+
+            if featureRestriction > 0:
+                bitmap = self.restrictFeatures(len(x[0]), featureRestriction, seed)
+            else:
+                bitmap = np.ones(len(x[0]))
+
+            newTree = DecisionTreeModel()
+            newTree.fit(x, y, minSplit, bitmap)
+            #Calculate decision tree instance and add to forest
+            forest.append(newTree)
+        self.forest = forest
+
+    def bagDataset(self, x, y, seed):
+        cnt = len(y)
+        #rand.seed(seed)
+        baggedX = []
+        baggedY = []
+
+        for i in range(cnt):
+            randIdx = rand.randrange(cnt)
+            baggedX.append(x[randIdx])
+            baggedY.append(y[randIdx])
+
+        return (baggedX, baggedY)
+
+    def restrictFeatures(self, bitmapSize, featureCnt, seed):
+        #rand.seed(seed)
+        bitmap = np.zeros(bitmapSize)
+
+        i = 0
+        while i < featureCnt:
+            #Pick a random feature and if it hasn't been enabled, do so
+            idx = rand.randrange(bitmapSize)
+            
+            if bitmap[idx] != 1:
+                bitmap[idx] = 1
+                i += 1
+        return bitmap
+
 class DecisionTreeModel(object):
     """A model that creates a model based off a decision tree."""
 
     def __init__(self):
         pass
 
-    def fit(self, x, y, minSplits, featureRestriction, seed):
+    def fit(self, x, y, minSplits, bitmap):
         self.minSplits = minSplits
         np_x = np.asarray(x)
         np_y = np.asarray(y)
-        
-        if featureRestriction >= 0:
-            bitmap = self.restrictFeatures(len(x[0]), featureRestriction, seed)
-        else:
-            bitmap = np.ones(len(x[0]))
-        print(bitmap)
 
         #Start decision tree model
-        self.root = self.growTree(np_x, np_y, bitmap, seed)
+        self.root = self.growTree(np_x, np_y, bitmap, 0)
         pass
 
     def predict(self, x, predictionThreshold):
@@ -40,48 +100,6 @@ class DecisionTreeModel(object):
             return self.predictMessage(example, node.LeftNode, predictionThreshold)
         else:
             return self.predictMessage(example, node.RightNode, predictionThreshold)
-
-
-    def growForest(self, x, y, numTrees, minSplit, baggingFlag, featureRestriction, seed):
-
-        forest = []
-        for i in range(numTrees):
-            
-            #create modified sets of X and Y if bagging applied
-            if baggingFlag == True:
-                (x, y) = self.bagDataset(x, y, seed)
-
-            #Calculate decision tree instance and add to forest
-            forest.append(self.fit(x, y, minSplit, featureRestriction, seed))
-        pass
-
-    def bagDataset(self, x, y, seed):
-        cnt = len(y)
-        rand.seed(seed)
-        baggedX = []
-        baggedY = []
-
-        for i in range(cnt):
-            randIdx = rand.randrange(cnt)
-            baggedX.append(x[randIdx])
-            baggedY.append(y[randIdx])
-
-        return (baggedX, baggedY)
-
-    def restrictFeatures(self, bitmapSize, featureCnt, seed):
-        rand.seed(seed)
-        bitmap = np.zeros(bitmapSize)
-
-        i = 0
-        while i < featureCnt:
-            #Pick a random feature and if it hasn't been enabled, do so
-            idx = rand.randrange(bitmapSize)
-            
-            if bitmap[idx] != 1:
-                bitmap[idx] = 1
-                i += 1
-        return bitmap
-
 
     def growTree(self, x, y, bitmap, level):
         #print("level:",level)
@@ -109,8 +127,7 @@ class DecisionTreeModel(object):
                 oneCnt = instanceDict[1]
             return DecisionTreeNode(None, None, None, (oneCnt + 1) / (yLen + 2), None)
 
-        if xIdx != 0:
-            bitmap[xIdx] = 0
+        bitmap[xIdx] = 0
 
         #Split datasets on value for feature
         (threshold, xSplitLeft, ySplitLeft, xSplitRight, ySplitRight) = self.SplitByFeature(x, y, xIdx)
