@@ -173,6 +173,8 @@ def Featurize(xTrainRaw, yTrainRaw, xTestRaw, numFrequentWords, numMutualInforma
     xTrain = []
     xTest = []
 
+    print("Handcrafted Features:",includeHandCraftedFeatures," NumFrequentWords:",numFrequentWords," NumMutualInformation:",numMutualInformationWords)
+
     if includeHandCraftedFeatures == True:
         (xTrainHC, xTestHC) = FeaturizeHandcrafted(xTrainRaw, xTestRaw)      
         xTrain = combineDatasets(xTrain, xTrainHC)
