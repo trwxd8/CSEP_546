@@ -11,13 +11,14 @@ class BagOfWordsModel(object):
     def fillVocabulary(self, x):
          for example in x:
             curr_words = example.split()
-            for word in curr_words:
+            for currWord in curr_words:
+                word = currWord.lower()
+                #word = ''.join(char.lower() for char in currWord if char.isalnum())
                 if word not in self.vocabulary and word not in self.preFeaturedWords:
                     #print(word)
                     self.vocabulary.append(word)
 
-    def FrequencyFeatureSelection(self, x, n):
-
+    def LoadFrequencyDictionary(self, x):
         vocabCount = {}
         for vocab in self.vocabulary:
             vocabCount[vocab] = 0
@@ -26,27 +27,37 @@ class BagOfWordsModel(object):
         for example in x:
             curr_words = example.split()
             #curr_features = []
-            for word in curr_words:
+            for currWord in curr_words:
+                word = currWord.lower()
                 if word in vocabCount:
                     vocabCount[word] += 1
 
-        sorted_vocabCount = sorted(vocabCount.items(), key=lambda kv: kv[1], reverse=True)
-        topn_results = sorted_vocabCount[:n]
+        self.sortedVocabCount = sorted(vocabCount.items(), key=lambda kv: kv[1], reverse=True)
+
+    def FrequencyFeatureSelection(self, n):
+        topn_results = self.sortedVocabCount[:n]
         return topn_results
 
-    def MutualInformationFeatureSelection(self, x, y, n):
+    def LoadMutualInformationDictionary(self, x, y):
         cnt = len(y)
         pos_cnt = sum(y)
         neg_cnt = cnt - pos_cnt
         mutualInfo = {}
 
-        for word in self.vocabulary:
+        for vocabWord in self.vocabulary:
             word_present = word_pos = word_neg = noword_pos = noword_neg = currMI = 0
             
             for i in range(cnt):
                 example = x[i]
+                curr_words = example.split()
+                vocabContained = False
+                for currWord in curr_words:
+                    word = currWord.lower()
+                    if word == vocabWord:
+                        vocabContained = True
+                        break
 
-                if word in example.split():
+                if vocabContained == True:
                     word_present += 1
                     if y[i] == 1:
                         word_pos += 1
@@ -74,11 +85,12 @@ class BagOfWordsModel(object):
             currMI += prob_word_neg * math.log2(prob_word_neg / (prob_word * prob_neg) )
             currMI += prob_noword_pos * math.log2(prob_noword_pos / (prob_noword * prob_pos) )
             currMI += prob_noword_neg * math.log2(prob_noword_neg / (prob_noword * prob_neg) )
-            mutualInfo[word] = currMI
+            mutualInfo[vocabWord] = currMI
 
-        sorted_mutualInfo = sorted(mutualInfo.items(), key=lambda kv: kv[1], reverse=True)
-        
-        topn_results = sorted_mutualInfo[:n]
+        self.sortedMutualInfo = sorted(mutualInfo.items(), key=lambda kv: kv[1], reverse=True)
+
+    def MutualInformationFeatureSelection(self, n):
+        topn_results = self.sortedMutualInfo[:n]
         return topn_results
 
     def prob_func(self, observed, total):
@@ -87,11 +99,16 @@ class BagOfWordsModel(object):
     def FeaturizeByWords(self, xTrainRaw, xTestRaw, words):
         # featurize the training data, may want to do multiple passes to count things.
         xTrain = []
-        for x in xTrainRaw:
+        for example in xTrainRaw:
             features = []
-            # Have features for a few words
+            # Have features for a few words\
+            lowercase_words = []
+            for curr_words in example.split():
+                for currWord in curr_words:
+                    lowercase_words.append(currWord.lower())
+
             for key_word in words:
-                if key_word in x:
+                if key_word in lowercase_words:
                     features.append(1)
                 else:
                     features.append(0)

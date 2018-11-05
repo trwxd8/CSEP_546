@@ -1,0 +1,180 @@
+Cross validation on  0
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 200
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     85    |     78    | Recall  |0.521472393|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     19    |    654    |   FPR   |0.028231798|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.883971292     |
+ |             |0.817307692|0.478527607|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     79    |     84    | Recall  |0.484662577|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     20    |    653    |   FPR   |0.029717682|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.875598086     |
+ |             |0.797979798|0.515337423|                     |
+ |-----------------------------------------------------------|
+
+0.5 - 0.029717682020802376 - 0.5153374233128835
+Accuracy: 0.8755980861244019  Lower Bound: 0.8532253621057828  Upper Bound: 0.897970810143021
+Cross validation on  1
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 200
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     77    |     77    | Recall  |0.500000000|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     36    |    646    |   FPR   |0.052785924|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.864832536     |
+ |             |0.681415929|0.500000000|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     72    |     82    | Recall  |0.467532468|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     35    |    647    |   FPR   |0.051319648|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.860047847     |
+ |             |0.672897196|0.532467532|                     |
+ |-----------------------------------------------------------|
+
+0.5 - 0.051319648093841645 - 0.5324675324675324
+Accuracy: 0.8600478468899522  Lower Bound: 0.8365296494918328  Upper Bound: 0.8835660442880715
+Cross validation on  2
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 200
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     84    |     66    | Recall  |0.560000000|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     29    |    657    |   FPR   |0.042274052|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.886363636     |
+ |             |0.743362832|0.440000000|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     85    |     65    | Recall  |0.566666667|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     30    |    656    |   FPR   |0.043731778|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.886363636     |
+ |             |0.739130435|0.433333333|                     |
+ |-----------------------------------------------------------|
+
+0.5 - 0.043731778425655975 - 0.43333333333333335
+Accuracy: 0.8863636363636364  Lower Bound: 0.8648498148207515  Upper Bound: 0.9078774579065212
+Cross validation on  3
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 200
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     73    |    113    | Recall  |0.392473118|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     14    |    636    |   FPR   |0.021538462|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.848086124     |
+ |             |0.839080460|0.607526882|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     71    |    115    | Recall  |0.381720430|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     13    |    637    |   FPR   |0.020000000|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.846889952     |
+ |             |0.845238095|0.618279570|                     |
+ |-----------------------------------------------------------|
+
+0.5 - 0.02 - 0.6182795698924731
+Accuracy: 0.84688995215311  Lower Bound: 0.8224799246430413  Upper Bound: 0.8712999796631787
+Cross validation on  4
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 200
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     86    |     68    | Recall  |0.558441558|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     31    |    651    |   FPR   |0.045454545|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.881578947     |
+ |             |0.735042735|0.441558442|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     86    |     68    | Recall  |0.558441558|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     25    |    657    |   FPR   |0.036656891|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.888755981     |
+ |             |0.774774775|0.441558442|                     |
+ |-----------------------------------------------------------|
+
+0.5 - 0.036656891495601175 - 0.44155844155844154
+Accuracy: 0.888755980861244  Lower Bound: 0.8674411183145035  Upper Bound: 0.9100708434079844

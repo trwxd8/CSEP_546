@@ -1,0 +1,1373 @@
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 0
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    135    |    138    | Recall  |0.494505495|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     66    |   1055    |   FPR   |0.058876004|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.853658537     |
+ |             |0.671641791|0.505494505|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    135    |    138    | Recall  |0.494505495|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     63    |   1058    |   FPR   |0.056199822|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.855810617     |
+ |             |0.681818182|0.505494505|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 25
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    102    |    171    | Recall  |0.373626374|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     35    |   1086    |   FPR   |0.031222123|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.852223816     |
+ |             |0.744525547|0.626373626|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    135    |    138    | Recall  |0.494505495|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     63    |   1058    |   FPR   |0.056199822|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.855810617     |
+ |             |0.681818182|0.505494505|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 50
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    132    |    141    | Recall  |0.483516484|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     54    |   1067    |   FPR   |0.048171276|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.860114778     |
+ |             |0.709677419|0.516483516|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    132    |    141    | Recall  |0.483516484|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     48    |   1073    |   FPR   |0.042818912|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.864418938     |
+ |             |0.733333333|0.516483516|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 75
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    132    |    141    | Recall  |0.483516484|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     56    |   1065    |   FPR   |0.049955397|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.858680057     |
+ |             |0.702127660|0.516483516|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    125    |    148    | Recall  |0.457875458|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     38    |   1083    |   FPR   |0.033898305|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.866571019     |
+ |             |0.766871166|0.542124542|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 100
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    130    |    143    | Recall  |0.476190476|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     58    |   1063    |   FPR   |0.051739518|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.855810617     |
+ |             |0.691489362|0.523809524|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    125    |    148    | Recall  |0.457875458|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     38    |   1083    |   FPR   |0.033898305|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.866571019     |
+ |             |0.766871166|0.542124542|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 125
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    125    |    148    | Recall  |0.457875458|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     48    |   1073    |   FPR   |0.042818912|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.859397418     |
+ |             |0.722543353|0.542124542|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    125    |    148    | Recall  |0.457875458|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     38    |   1083    |   FPR   |0.033898305|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.866571019     |
+ |             |0.766871166|0.542124542|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 150
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    151    |    122    | Recall  |0.553113553|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     52    |   1069    |   FPR   |0.046387154|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.875179340     |
+ |             |0.743842365|0.446886447|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    144    |    129    | Recall  |0.527472527|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.873744620     |
+ |             |0.753926702|0.472527473|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 175
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    149    |    124    | Recall  |0.545787546|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     51    |   1070    |   FPR   |0.045495094|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.745000000|0.454212454|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    144    |    129    | Recall  |0.527472527|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.873744620     |
+ |             |0.753926702|0.472527473|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 200
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    148    |    125    | Recall  |0.542124542|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     50    |   1071    |   FPR   |0.044603033|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.747474747|0.457875458|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    144    |    129    | Recall  |0.527472527|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.873744620     |
+ |             |0.753926702|0.472527473|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 225
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    150    |    123    | Recall  |0.549450549|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     52    |   1069    |   FPR   |0.046387154|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.742574257|0.450549451|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    144    |    129    | Recall  |0.527472527|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.873744620     |
+ |             |0.753926702|0.472527473|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 250
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.', 'freephone', 'standard', 'only!', 'specially', '36504', 'order,', 'contacted', 'fantasy', 'inviting', 'stop?', '62468', 'awaiting', 'congratulations', 'pound', 'prize!', 's.', 'club', 'representative', 'stockport,', 'txting', 'tc', 'store', 'have', 'urgent', 'sms']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    151    |    122    | Recall  |0.553113553|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     55    |   1066    |   FPR   |0.049063336|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.873027260     |
+ |             |0.733009709|0.446886447|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    144    |    129    | Recall  |0.527472527|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.873744620     |
+ |             |0.753926702|0.472527473|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 275
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.', 'freephone', 'standard', 'only!', 'specially', '36504', 'order,', 'contacted', 'fantasy', 'inviting', 'stop?', '62468', 'awaiting', 'congratulations', 'pound', 'prize!', 's.', 'club', 'representative', 'stockport,', 'txting', 'tc', 'store', 'have', 'urgent', 'sms', 'currently', 'fancy', 'pics', '100', '&lt;#&gt;', "i'll", 'â£800', 'offers', 'anytime', '3', 'wk.', 'ts&cs', 'summer', 'word:', 'press', 'polyphonic', '3030.', 'award', 'match', 'rate)', 'â£200', 'freemsg:', 'flag', 'official', 'txts']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     40    |   1081    |   FPR   |0.035682426|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.879483501     |
+ |             |0.783783784|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    136    |    137    | Recall  |0.498168498|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     42    |   1079    |   FPR   |0.037466548|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.871592539     |
+ |             |0.764044944|0.501831502|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 0  NumMutualInformation: 300
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.', 'freephone', 'standard', 'only!', 'specially', '36504', 'order,', 'contacted', 'fantasy', 'inviting', 'stop?', '62468', 'awaiting', 'congratulations', 'pound', 'prize!', 's.', 'club', 'representative', 'stockport,', 'txting', 'tc', 'store', 'have', 'urgent', 'sms', 'currently', 'fancy', 'pics', '100', '&lt;#&gt;', "i'll", 'â£800', 'offers', 'anytime', '3', 'wk.', 'ts&cs', 'summer', 'word:', 'press', 'polyphonic', '3030.', 'award', 'match', 'rate)', 'â£200', 'freemsg:', 'flag', 'official', 'txts', 'bluetooth', 'welcome', 'friend.', 'in', 'top', "u've", '150p/msgrcvdhg/suite342/2lands/row/w1j6hl', 'singles', '02/06/03!', 'fantasies', 'row/w1jhl', 'cash-balance', 'cash-in', '08718720201', "t's&c's", '60p/min.', 'ltd', 'â£4.50.', 'chosen', 'vary', 'voda', '25p', '08001950382', 'abta', 'tenerife']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    144    |    129    | Recall  |0.527472527|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     42    |   1079    |   FPR   |0.037466548|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.877331420     |
+ |             |0.774193548|0.472527473|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    136    |    137    | Recall  |0.498168498|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     42    |   1079    |   FPR   |0.037466548|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.871592539     |
+ |             |0.764044944|0.501831502|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 0
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     76    |    197    | Recall  |0.278388278|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     45    |   1076    |   FPR   |0.040142730|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.826398852     |
+ |             |0.628099174|0.721611722|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    133    |    140    | Recall  |0.487179487|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     59    |   1062    |   FPR   |0.052631579|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.857245337     |
+ |             |0.692708333|0.512820513|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 25
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |     97    |    176    | Recall  |0.355311355|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     60    |   1061    |   FPR   |0.053523640|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.830703013     |
+ |             |0.617834395|0.644688645|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    133    |    140    | Recall  |0.487179487|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     59    |   1062    |   FPR   |0.052631579|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.857245337     |
+ |             |0.692708333|0.512820513|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 50
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    128    |    145    | Recall  |0.468864469|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     54    |   1067    |   FPR   |0.048171276|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.857245337     |
+ |             |0.703296703|0.531135531|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    136    |    137    | Recall  |0.498168498|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.868005739     |
+ |             |0.743169399|0.501831502|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 75
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    124    |    149    | Recall  |0.454212454|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     48    |   1073    |   FPR   |0.042818912|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.858680057     |
+ |             |0.720930233|0.545787546|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    125    |    148    | Recall  |0.457875458|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     40    |   1081    |   FPR   |0.035682426|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.865136298     |
+ |             |0.757575758|0.542124542|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 100
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    128    |    145    | Recall  |0.468864469|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     57    |   1064    |   FPR   |0.050847458|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.855093257     |
+ |             |0.691891892|0.531135531|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    125    |    148    | Recall  |0.457875458|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     40    |   1081    |   FPR   |0.035682426|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.865136298     |
+ |             |0.757575758|0.542124542|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 125
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    134    |    139    | Recall  |0.490842491|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     56    |   1065    |   FPR   |0.049955397|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.860114778     |
+ |             |0.705263158|0.509157509|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    125    |    148    | Recall  |0.457875458|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     40    |   1081    |   FPR   |0.035682426|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.865136298     |
+ |             |0.757575758|0.542124542|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 150
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    148    |    125    | Recall  |0.542124542|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     51    |   1070    |   FPR   |0.045495094|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.873744620     |
+ |             |0.743718593|0.457875458|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.755208333|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 175
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    148    |    125    | Recall  |0.542124542|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     52    |   1069    |   FPR   |0.046387154|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.873027260     |
+ |             |0.740000000|0.457875458|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.755208333|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 200
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    148    |    125    | Recall  |0.542124542|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     53    |   1068    |   FPR   |0.047279215|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.872309900     |
+ |             |0.736318408|0.457875458|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.755208333|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 225
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    149    |    124    | Recall  |0.545787546|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     51    |   1070    |   FPR   |0.045495094|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.745000000|0.454212454|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.755208333|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 250
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.', 'freephone', 'standard', 'only!', 'specially', '36504', 'order,', 'contacted', 'fantasy', 'inviting', 'stop?', '62468', 'awaiting', 'congratulations', 'pound', 'prize!', 's.', 'club', 'representative', 'stockport,', 'txting', 'tc', 'store', 'have', 'urgent', 'sms']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    149    |    124    | Recall  |0.545787546|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     53    |   1068    |   FPR   |0.047279215|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.873027260     |
+ |             |0.737623762|0.454212454|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.755208333|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 275
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.', 'freephone', 'standard', 'only!', 'specially', '36504', 'order,', 'contacted', 'fantasy', 'inviting', 'stop?', '62468', 'awaiting', 'congratulations', 'pound', 'prize!', 's.', 'club', 'representative', 'stockport,', 'txting', 'tc', 'store', 'have', 'urgent', 'sms', 'currently', 'fancy', 'pics', '100', '&lt;#&gt;', "i'll", 'â£800', 'offers', 'anytime', '3', 'wk.', 'ts&cs', 'summer', 'word:', 'press', 'polyphonic', '3030.', 'award', 'match', 'rate)', 'â£200', 'freemsg:', 'flag', 'official', 'txts']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    146    |    127    | Recall  |0.534798535|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     41    |   1080    |   FPR   |0.036574487|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.879483501     |
+ |             |0.780748663|0.465201465|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    137    |    136    | Recall  |0.501831502|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     42    |   1079    |   FPR   |0.037466548|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.872309900     |
+ |             |0.765363128|0.498168498|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 20  NumMutualInformation: 300
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.', 'freephone', 'standard', 'only!', 'specially', '36504', 'order,', 'contacted', 'fantasy', 'inviting', 'stop?', '62468', 'awaiting', 'congratulations', 'pound', 'prize!', 's.', 'club', 'representative', 'stockport,', 'txting', 'tc', 'store', 'have', 'urgent', 'sms', 'currently', 'fancy', 'pics', '100', '&lt;#&gt;', "i'll", 'â£800', 'offers', 'anytime', '3', 'wk.', 'ts&cs', 'summer', 'word:', 'press', 'polyphonic', '3030.', 'award', 'match', 'rate)', 'â£200', 'freemsg:', 'flag', 'official', 'txts', 'bluetooth', 'welcome', 'friend.', 'in', 'top', "u've", '150p/msgrcvdhg/suite342/2lands/row/w1j6hl', 'singles', '02/06/03!', 'fantasies', 'row/w1jhl', 'cash-balance', 'cash-in', '08718720201', "t's&c's", '60p/min.', 'ltd', 'â£4.50.', 'chosen', 'vary', 'voda', '25p', '08001950382', 'abta', 'tenerife']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    146    |    127    | Recall  |0.534798535|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     41    |   1080    |   FPR   |0.036574487|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.879483501     |
+ |             |0.780748663|0.465201465|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    137    |    136    | Recall  |0.501831502|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     42    |   1079    |   FPR   |0.037466548|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.872309900     |
+ |             |0.765363128|0.498168498|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 0
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    120    |    153    | Recall  |0.439560440|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     50    |   1071    |   FPR   |0.044603033|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.854375897     |
+ |             |0.705882353|0.560439560|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    121    |    152    | Recall  |0.443223443|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     38    |   1083    |   FPR   |0.033898305|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.863701578     |
+ |             |0.761006289|0.556776557|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 25
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    122    |    151    | Recall  |0.446886447|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     49    |   1072    |   FPR   |0.043710972|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.856527977     |
+ |             |0.713450292|0.553113553|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    124    |    149    | Recall  |0.454212454|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     39    |   1082    |   FPR   |0.034790366|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.865136298     |
+ |             |0.760736196|0.545787546|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 50
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    130    |    143    | Recall  |0.476190476|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     56    |   1065    |   FPR   |0.049955397|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.857245337     |
+ |             |0.698924731|0.523809524|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    136    |    137    | Recall  |0.498168498|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.868005739     |
+ |             |0.743169399|0.501831502|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 75
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    136    |    137    | Recall  |0.498168498|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     59    |   1062    |   FPR   |0.052631579|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.859397418     |
+ |             |0.697435897|0.501831502|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    125    |    148    | Recall  |0.457875458|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     40    |   1081    |   FPR   |0.035682426|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.865136298     |
+ |             |0.757575758|0.542124542|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 100
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    131    |    142    | Recall  |0.479853480|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     54    |   1067    |   FPR   |0.048171276|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.859397418     |
+ |             |0.708108108|0.520146520|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    125    |    148    | Recall  |0.457875458|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     40    |   1081    |   FPR   |0.035682426|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.865136298     |
+ |             |0.757575758|0.542124542|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 125
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    128    |    145    | Recall  |0.468864469|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     59    |   1062    |   FPR   |0.052631579|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.853658537     |
+ |             |0.684491979|0.531135531|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    125    |    148    | Recall  |0.457875458|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     40    |   1081    |   FPR   |0.035682426|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.865136298     |
+ |             |0.757575758|0.542124542|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 150
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    149    |    124    | Recall  |0.545787546|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     54    |   1067    |   FPR   |0.048171276|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.872309900     |
+ |             |0.733990148|0.454212454|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.755208333|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 175
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    149    |    124    | Recall  |0.545787546|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     50    |   1071    |   FPR   |0.044603033|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.875179340     |
+ |             |0.748743719|0.454212454|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.755208333|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 200
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    149    |    124    | Recall  |0.545787546|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     52    |   1069    |   FPR   |0.046387154|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.873744620     |
+ |             |0.741293532|0.454212454|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.755208333|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 225
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    149    |    124    | Recall  |0.545787546|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     54    |   1067    |   FPR   |0.048171276|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.872309900     |
+ |             |0.733990148|0.454212454|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.755208333|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 250
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.', 'freephone', 'standard', 'only!', 'specially', '36504', 'order,', 'contacted', 'fantasy', 'inviting', 'stop?', '62468', 'awaiting', 'congratulations', 'pound', 'prize!', 's.', 'club', 'representative', 'stockport,', 'txting', 'tc', 'store', 'have', 'urgent', 'sms']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    150    |    123    | Recall  |0.549450549|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     49    |   1072    |   FPR   |0.043710972|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.876614060     |
+ |             |0.753768844|0.450549451|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    145    |    128    | Recall  |0.531135531|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     47    |   1074    |   FPR   |0.041926851|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.874461980     |
+ |             |0.755208333|0.468864469|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 275
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.', 'freephone', 'standard', 'only!', 'specially', '36504', 'order,', 'contacted', 'fantasy', 'inviting', 'stop?', '62468', 'awaiting', 'congratulations', 'pound', 'prize!', 's.', 'club', 'representative', 'stockport,', 'txting', 'tc', 'store', 'have', 'urgent', 'sms', 'currently', 'fancy', 'pics', '100', '&lt;#&gt;', "i'll", 'â£800', 'offers', 'anytime', '3', 'wk.', 'ts&cs', 'summer', 'word:', 'press', 'polyphonic', '3030.', 'award', 'match', 'rate)', 'â£200', 'freemsg:', 'flag', 'official', 'txts']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    149    |    124    | Recall  |0.545787546|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     42    |   1079    |   FPR   |0.037466548|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.880918221     |
+ |             |0.780104712|0.454212454|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    137    |    136    | Recall  |0.501831502|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     42    |   1079    |   FPR   |0.037466548|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.872309900     |
+ |             |0.765363128|0.498168498|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 40  NumMutualInformation: 300
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae', 'pobox', 'vouchers', '8007', 'mob', 'orange', '16', '1st', 'cost', 'pounds', 'expires', '18+', '08000839402', 'delivery', 'live', 'â£2000', 'colour', 'entry', 'on', 'now', 'valid', 'â£2,000', 'national', 'numbers', 'complimentary', 't&c', 'line', 'me', 'price', 'â£500', 'no:', 'private!', 'statement', 'identifier', 'rate', 'â£1.50', 'mobileupd8', 'this', 'shows', 'mins', 'collect', 'xmas', "i'm", 'ntt', 'land', 'you!', 'final', 'un-redeemed', 'points.', '750', 'poly', 'every', 'account', 'gift', 'network', '1', '2nd', 'guaranteed.', 'line.', 'please', '1327', '5wb', 'www.getzed.co.uk', '08712300220', 'costa', 'charged', 'music', 'easy,', 'apply', 'unsubscribe', 'onto', '87066', '800', 'operator', 'collection', 'phones', 'week!', 'tried', 'my', 'but', 'number', 'todays', 'stop.', 'been', '12hrs', 'update', 'ipod', 'custcare', 'no1', '20p', 'ltd,', 'croydon', 'cr9', '0870', '86021', 'i.', 'eg', 'ending', 'â£350', 'uk', 'mobiles', 'bt-national-rate', '09050090044', 'toclaim.', 'sae,', 'pobox334,', 'sk38xh,', 'costâ£1.50/pm,', 'max10mins', 'free.', 'winner', 'entitled', 'voucher', 'yr', 'caller', 'worth', 'landline', 'arrive', 'hg/suite342/2lands', '2003', 'txt:', 'award.', '0800', 'mobile!', 'code', 'rates', 'del', 'apply.', 'about', 'week', 'hot', 'double', 'play', 'services', 'sex', '08000930705', 'today!', 'sol', 'valued', 'xxx', 'with', 'http://www.urawinner.com', 'ldn', '40gb', 'replying', '08707509020', 'content', '150p/msg.', 'm.', 'matches', 'service.', 'freephone', 'standard', 'only!', 'specially', '36504', 'order,', 'contacted', 'fantasy', 'inviting', 'stop?', '62468', 'awaiting', 'congratulations', 'pound', 'prize!', 's.', 'club', 'representative', 'stockport,', 'txting', 'tc', 'store', 'have', 'urgent', 'sms', 'currently', 'fancy', 'pics', '100', '&lt;#&gt;', "i'll", 'â£800', 'offers', 'anytime', '3', 'wk.', 'ts&cs', 'summer', 'word:', 'press', 'polyphonic', '3030.', 'award', 'match', 'rate)', 'â£200', 'freemsg:', 'flag', 'official', 'txts', 'bluetooth', 'welcome', 'friend.', 'in', 'top', "u've", '150p/msgrcvdhg/suite342/2lands/row/w1j6hl', 'singles', '02/06/03!', 'fantasies', 'row/w1jhl', 'cash-balance', 'cash-in', '08718720201', "t's&c's", '60p/min.', 'ltd', 'â£4.50.', 'chosen', 'vary', 'voda', '25p', '08001950382', 'abta', 'tenerife']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    153    |    120    | Recall  |0.560439560|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     50    |   1071    |   FPR   |0.044603033|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.878048780     |
+ |             |0.753694581|0.439560440|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    137    |    136    | Recall  |0.501831502|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     42    |   1079    |   FPR   |0.037466548|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.872309900     |
+ |             |0.765363128|0.498168498|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 50  NumMutualInformation: 0
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from', 'when', 'up', 'no', 'go', 'how', 'all', '4', '.', 'what', 'now']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    123    |    150    | Recall  |0.450549451|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     54    |   1067    |   FPR   |0.048171276|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.853658537     |
+ |             |0.694915254|0.549450549|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    128    |    145    | Recall  |0.468864469|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     44    |   1077    |   FPR   |0.039250669|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.864418938     |
+ |             |0.744186047|0.531135531|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 50  NumMutualInformation: 25
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from', 'when', 'up', 'no', 'go', 'how', 'all', '4', '.', 'what', 'now']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    126    |    147    | Recall  |0.461538462|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     52    |   1069    |   FPR   |0.046387154|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.857245337     |
+ |             |0.707865169|0.538461538|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    113    |    160    | Recall  |0.413919414|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     39    |   1082    |   FPR   |0.034790366|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.857245337     |
+ |             |0.743421053|0.586080586|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 50  NumMutualInformation: 50
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from', 'when', 'up', 'no', 'go', 'how', 'all', '4', '.', 'what', 'now']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!']
+Use Logistic Regression:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    130    |    143    | Recall  |0.476190476|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     54    |   1067    |   FPR   |0.048171276|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.858680057     |
+ |             |0.706521739|0.523809524|                     |
+ |-----------------------------------------------------------|
+
+Use Decision Tree:
+ |-----------------------------------------------------------|
+ |             |      Prediction       |                     |
+ |             |-----------------------|                     |
+ |             |     1     |     0     |                     |
+ |-------------|-----------|-----------|---------------------|
+ |         | 1 |    124    |    149    | Recall  |0.454212454|
+ | Actual  |---|-----------|-----------|---------|-----------|
+ |         | 0 |     40    |   1081    |   FPR   |0.035682426|
+ |-------------|-----------|-----------|---------------------|
+ |             | Precision |    FNR    |      Accuracy:      |
+ |             |-----------|-----------|     0.864418938     |
+ |             |0.756097561|0.545787546|                     |
+ |-----------------------------------------------------------|
+
+Handcrafted Features: True  NumFrequentWords: 50  NumMutualInformation: 75
+Freq words: ['to', 'i', 'you', 'a', 'the', 'u', 'and', 'is', 'in', 'my', 'your', 'for', 'me', 'of', 'have', 'call', 'on', 'it', 'are', 'that', '2', 'but', 'so', 'or', 'at', 'not', 'do', 'if', 'with', 'can', "i'm", 'will', 'ur', 'get', 'be', 'just', 'we', 'this', '&lt;#&gt;', 'from', 'when', 'up', 'no', 'go', 'how', 'all', '4', '.', 'what', 'now']
+MI words: ['call', 'txt', 'free', 'claim', 'now!', 'mobile', 'to', 'your', 'or', '&', 'reply', 'our', 'stop', 'text', 'cash', 'won', 'i', 'service', 'from', 'prize', 'tone', 'win', 'contact', 'per', 'nokia', 'urgent!', '-', 'for', 'chat', 'latest', 'box', 'po', 'a', '4*', '16+', 'video', 'ringtone', 'holiday', 'awarded', 'new', 'weekly', 'selected', 'await', 'camera', '2', 'tones', '500', 't&cs', 'customer', 'free!', '4', 'â£1000', '86688', 'bonus', 'landline.', 'â£100', '150p', 'send', 'ur', '18', 'dating', '10p', 'only', 'collection.', 'attempt', '150ppm', 'receive', 'draw', 'prize.', 'guaranteed', 'â£5000', 'chance', 'â£250', 'code:', 'sae']
+Use Logistic Regression:

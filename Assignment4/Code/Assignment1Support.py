@@ -126,9 +126,14 @@ def FeaturizeContinuousLength(xTrainRaw, xTestRaw):
             features.append(0)
 
         # Have features for a few words
-        fullWords = x.split()
+        lowercase_words = []
+        for curr_words in x.split():
+            for currWord in curr_words:
+                word = ''.join(char.lower() for char in currWord if char.isalnum())
+                lowercase_words.append(word)
+        
         for word in words:
-            if word in fullWords:
+            if word in lowercase_words:
                 features.append(1)
             else:
                 features.append(0)
@@ -150,9 +155,14 @@ def FeaturizeContinuousLength(xTrainRaw, xTestRaw):
             features.append(0)
 
         # Have features for a few words
-        fullWords = x.split()
+        lowercase_words = []
+        for curr_words in x.split():
+            for currWord in curr_words:
+                word = ''.join(char.lower() for char in currWord if char.isalnum())
+                lowercase_words.append(word)
+
         for word in words:
-            if word in fullWords:
+            if word in lowercase_words:
                 features.append(1)
             else:
                 features.append(0)
@@ -165,10 +175,7 @@ def InspectFeatures(xRaw, x):
     for i in range(len(xRaw)):
         print(x[i], xRaw[i])
 
-def Featurize(xTrainRaw, yTrainRaw, xTestRaw, numFrequentWords, numMutualInformationWords, includeHandCraftedFeatures):    
-    bagModel = BagOfWordsModel.BagOfWordsModel()
-    bagModel.fillVocabulary(xTrainRaw)
-
+def Featurize(xTrainRaw, yTrainRaw, xTestRaw, bagModel, numFrequentWords, numMutualInformationWords, includeHandCraftedFeatures):    
     usedWords = []
     xTrain = []
     xTest = []
@@ -186,10 +193,19 @@ def Featurize(xTrainRaw, yTrainRaw, xTestRaw, numFrequentWords, numMutualInforma
 
 
     if numFrequentWords > 0:
-        results = bagModel.FrequencyFeatureSelection(xTrainRaw, numFrequentWords)
+        results = bagModel.FrequencyFeatureSelection(numFrequentWords)
         freqWords = []
-        for i in range(numFrequentWords):
-            freqWords.append(results[i][0])
+        i = 0
+        idx = 0
+        fullCnt = len(bagModel.sortedVocabCount)
+        while i < numFrequentWords and idx < fullCnt:
+            currWord = bagModel.sortedVocabCount[idx][0]
+            if currWord not in usedWords:
+                freqWords.append(currWord)
+                usedWords.append(currWord)
+                i += 1
+            idx += 1
+        print("Freq words:",freqWords)
 
         xTrainFreq, xTestFreq = bagModel.FeaturizeByWords(xTrainRaw, xTestRaw, freqWords)
         xTrain = combineDatasets(xTrain, xTrainFreq)
@@ -197,10 +213,19 @@ def Featurize(xTrainRaw, yTrainRaw, xTestRaw, numFrequentWords, numMutualInforma
 
 
     if numMutualInformationWords > 0:
-        results = bagModel.MutualInformationFeatureSelection(xTrainRaw, yTrainRaw, numMutualInformationWords)
         miWords = []
-        for i in range(numMutualInformationWords):
-            miWords.append(results[i][0])
+        i = 0
+        idx = 0
+        fullCnt = len(bagModel.sortedMutualInfo)
+        while i < numMutualInformationWords and idx < fullCnt:
+            currWord = bagModel.sortedMutualInfo[idx][0]
+            if currWord not in usedWords:
+                miWords.append(currWord)
+                usedWords.append(currWord)
+                i += 1
+            idx += 1
+        print("MI words:",miWords)
+
 
         xTrainMI, xTestMI = bagModel.FeaturizeByWords(xTrainRaw, xTestRaw, miWords)
         xTrain = combineDatasets(xTrain, xTrainMI)
