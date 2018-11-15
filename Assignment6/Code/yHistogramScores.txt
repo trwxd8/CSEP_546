@@ -1,0 +1,166 @@
+(base) D:\School\PMP\CSEP546\Assignments\Assignment5\Code>py StartingPoint5.py
+Train is 0.491469 percent closed.
+Test is 0.493399 percent closed.
+Calculating features... YHistogram
+<bound method MostCommonModel.predict of <MostCommonModel.MostCommonModel object at 0x00000127A587EE10>>
+Most Common Accuracy: 0.5066006600660066 (0.4784533485794732, 0.53474797155254)
+Restriction: 0  Tree count: 5  minsplit: 30
+Total Forest Accuracy for feature restriction of  0 : 0.7227722772277227  Lower Bound: 0.697570925634508  Upper Bound: 0.7479736288209375
+Restriction: 0  Tree count: 5  minsplit: 60
+Total Forest Accuracy for feature restriction of  0 : 0.7161716171617162  Lower Bound: 0.6907887179399691  Upper Bound: 0.7415545163834633
+Restriction: 0  Tree count: 5  minsplit: 90
+Total Forest Accuracy for feature restriction of  0 : 0.7037953795379538  Lower Bound: 0.6780900082326344  Upper Bound: 0.7295007508432731
+Restriction: 0  Tree count: 5  minsplit: 120
+Total Forest Accuracy for feature restriction of  0 : 0.6988448844884488  Lower Bound: 0.6730169141484359  Upper Bound: 0.7246728548284618
+Restriction: 0  Tree count: 10  minsplit: 30
+Total Forest Accuracy for feature restriction of  0 : 0.6955445544554455  Lower Bound: 0.6696368393905499  Upper Bound: 0.7214522695203411
+Restriction: 0  Tree count: 10  minsplit: 60
+Total Forest Accuracy for feature restriction of  0 : 0.7062706270627063  Lower Bound: 0.6806279110345516  Upper Bound: 0.731913343090861
+Restriction: 0  Tree count: 10  minsplit: 90
+Total Forest Accuracy for feature restriction of  0 : 0.7021452145214522  Lower Bound: 0.6763985767723543  Upper Bound: 0.7278918522705501
+Restriction: 0  Tree count: 10  minsplit: 120
+Total Forest Accuracy for feature restriction of  0 : 0.7112211221122112  Lower Bound: 0.6857064614508226  Upper Bound: 0.7367357827735999
+Restriction: 0  Tree count: 25  minsplit: 30
+Total Forest Accuracy for feature restriction of  0 : 0.6963696369636964  Lower Bound: 0.6704817100250424  Upper Bound: 0.7222575639023503
+Restriction: 0  Tree count: 25  minsplit: 60
+Total Forest Accuracy for feature restriction of  0 : 0.6831683168316832  Lower Bound: 0.656975456799619  Upper Bound: 0.7093611768637474
+Restriction: 0  Tree count: 25  minsplit: 90
+Total Forest Accuracy for feature restriction of  0 : 0.6881188118811881  Lower Bound: 0.6620374018484393  Upper Bound: 0.7142002219139368
+Restriction: 0  Tree count: 25  minsplit: 120
+Total Forest Accuracy for feature restriction of  0 : 0.6881188118811881  Lower Bound: 0.6620374018484393  Upper Bound: 0.7142002219139368
+Restriction: 0  Tree count: 40  minsplit: 30
+Total Forest Accuracy for feature restriction of  0 : 0.7021452145214522  Lower Bound: 0.6763985767723543  Upper Bound: 0.7278918522705501
+Restriction: 0  Tree count: 40  minsplit: 60
+Total Forest Accuracy for feature restriction of  0 : 0.7103960396039604  Lower Bound: 0.6848597805409459  Upper Bound: 0.7359322986669748
+Restriction: 0  Tree count: 40  minsplit: 90
+Total Forest Accuracy for feature restriction of  0 : 0.7112211221122112  Lower Bound: 0.6857064614508226  Upper Bound: 0.7367357827735999
+Restriction: 0  Tree count: 40  minsplit: 120
+Total Forest Accuracy for feature restriction of  0 : 0.6938943894389439  Lower Bound: 0.6679473928748875  Upper Bound: 0.7198413860030003
+Restriction: 1  Tree count: 5  minsplit: 30
+Total Forest Accuracy for feature restriction of  1 : 0.6815181518151815  Lower Bound: 0.6552889051327233  Upper Bound: 0.7077473984976397
+Restriction: 1  Tree count: 5  minsplit: 60
+Total Forest Accuracy for feature restriction of  1 : 0.5066006600660066  Lower Bound: 0.4784533485794732  Upper Bound: 0.53474797155254
+Restriction: 1  Tree count: 5  minsplit: 90
+Total Forest Accuracy for feature restriction of  1 : 0.5066006600660066  Lower Bound: 0.4784533485794732  Upper Bound: 0.53474797155254
+Restriction: 1  Tree count: 5  minsplit: 120
+Total Forest Accuracy for feature restriction of  1 : 0.6361386138613861  Lower Bound: 0.6090523799036265  Upper Bound: 0.6632248478191458
+Restriction: 1  Tree count: 10  minsplit: 30
+Total Forest Accuracy for feature restriction of  1 : 0.5891089108910891  Lower Bound: 0.561409794264088  Upper Bound: 0.6168080275180902
+Restriction: 1  Tree count: 10  minsplit: 60
+Total Forest Accuracy for feature restriction of  1 : 0.6518151815181518  Lower Bound: 0.6249943700888855  Upper Bound: 0.678635992947418
+Restriction: 1  Tree count: 10  minsplit: 90
+Total Forest Accuracy for feature restriction of  1 : 0.6229372937293729  Lower Bound: 0.5956516805817647  Upper Bound: 0.6502229068769811
+Restriction: 1  Tree count: 10  minsplit: 120
+Total Forest Accuracy for feature restriction of  1 : 0.6336633663366337  Lower Bound: 0.6065380859112379  Upper Bound: 0.6607886467620294
+Restriction: 1  Tree count: 25  minsplit: 30
+Total Forest Accuracy for feature restriction of  1 : 0.6740924092409241  Lower Bound: 0.6477040907147151  Upper Bound: 0.700480727767133
+Restriction: 1  Tree count: 25  minsplit: 60
+Total Forest Accuracy for feature restriction of  1 : 0.6402640264026402  Lower Bound: 0.6132445924247831  Upper Bound: 0.6672834603804974
+Restriction: 1  Tree count: 25  minsplit: 90
+Total Forest Accuracy for feature restriction of  1 : 0.5602310231023102  Lower Bound: 0.532286247068815  Upper Bound: 0.5881757991358054
+Restriction: 1  Tree count: 25  minsplit: 120
+Total Forest Accuracy for feature restriction of  1 : 0.6765676567656765  Lower Bound: 0.6502315180322565  Upper Bound: 0.7029037954990965
+Restriction: 1  Tree count: 40  minsplit: 30
+Total Forest Accuracy for feature restriction of  1 : 0.5561056105610561  Lower Bound: 0.5281336293589024  Upper Bound: 0.5840775917632098
+Restriction: 1  Tree count: 40  minsplit: 60
+Total Forest Accuracy for feature restriction of  1 : 0.6831683168316832  Lower Bound: 0.656975456799619  Upper Bound: 0.7093611768637474
+Restriction: 1  Tree count: 40  minsplit: 90
+Total Forest Accuracy for feature restriction of  1 : 0.6270627062706271  Lower Bound: 0.5998370626635309  Upper Bound: 0.6542883498777233
+Restriction: 1  Tree count: 40  minsplit: 120
+Total Forest Accuracy for feature restriction of  1 : 0.5841584158415841  Lower Bound: 0.5564102655124977  Upper Bound: 0.6119065661706705
+Restriction: 2  Tree count: 5  minsplit: 30
+Total Forest Accuracy for feature restriction of  2 : 0.5891089108910891  Lower Bound: 0.561409794264088  Upper Bound: 0.6168080275180902
+Restriction: 2  Tree count: 5  minsplit: 60
+Total Forest Accuracy for feature restriction of  2 : 0.6691419141914191  Lower Bound: 0.6426517436030132  Upper Bound: 0.695632084779825
+Restriction: 2  Tree count: 5  minsplit: 90
+Total Forest Accuracy for feature restriction of  2 : 0.6757425742574258  Lower Bound: 0.6493889489027319  Upper Bound: 0.7020961996121197
+Restriction: 2  Tree count: 5  minsplit: 120
+Total Forest Accuracy for feature restriction of  2 : 0.6188118811881188  Lower Bound: 0.5914684027777785  Upper Bound: 0.6461553595984592
+Restriction: 2  Tree count: 10  minsplit: 30
+Total Forest Accuracy for feature restriction of  2 : 0.6740924092409241  Lower Bound: 0.6477040907147151  Upper Bound: 0.700480727767133
+Restriction: 2  Tree count: 10  minsplit: 60
+Total Forest Accuracy for feature restriction of  2 : 0.6262376237623762  Lower Bound: 0.5989998172448271  Upper Bound: 0.6534754302799254
+Restriction: 2  Tree count: 10  minsplit: 90
+Total Forest Accuracy for feature restriction of  2 : 0.665016501650165  Lower Bound: 0.6384439855230639  Upper Bound: 0.6915890177772661
+Restriction: 2  Tree count: 10  minsplit: 120
+Total Forest Accuracy for feature restriction of  2 : 0.6740924092409241  Lower Bound: 0.6477040907147151  Upper Bound: 0.700480727767133
+Restriction: 2  Tree count: 25  minsplit: 30
+Total Forest Accuracy for feature restriction of  2 : 0.6666666666666666  Lower Bound: 0.6401268141857219  Upper Bound: 0.6932065191476113
+Restriction: 2  Tree count: 25  minsplit: 60
+Total Forest Accuracy for feature restriction of  2 : 0.6831683168316832  Lower Bound: 0.656975456799619  Upper Bound: 0.7093611768637474
+Restriction: 2  Tree count: 25  minsplit: 90
+Total Forest Accuracy for feature restriction of  2 : 0.6501650165016502  Lower Bound: 0.6233147760891451  Upper Bound: 0.6770152569141552
+Restriction: 2  Tree count: 25  minsplit: 120
+Total Forest Accuracy for feature restriction of  2 : 0.6641914191419142  Lower Bound: 0.6376027079690245  Upper Bound: 0.6907801303148038
+Restriction: 2  Tree count: 40  minsplit: 30
+Total Forest Accuracy for feature restriction of  2 : 0.693069306930693  Lower Bound: 0.6671028165478216  Upper Bound: 0.7190357973135645
+Restriction: 2  Tree count: 40  minsplit: 60
+Total Forest Accuracy for feature restriction of  2 : 0.6724422442244224  Lower Bound: 0.6460196047306049  Upper Bound: 0.69886488371824
+Restriction: 2  Tree count: 40  minsplit: 90
+Total Forest Accuracy for feature restriction of  2 : 0.693069306930693  Lower Bound: 0.6671028165478216  Upper Bound: 0.7190357973135645
+Restriction: 2  Tree count: 40  minsplit: 120
+Total Forest Accuracy for feature restriction of  2 : 0.7120462046204621  Lower Bound: 0.6865532453009391  Upper Bound: 0.7375391639399851
+Restriction: 3  Tree count: 5  minsplit: 30
+Total Forest Accuracy for feature restriction of  3 : 0.7062706270627063  Lower Bound: 0.6806279110345516  Upper Bound: 0.731913343090861
+Restriction: 3  Tree count: 5  minsplit: 60
+Total Forest Accuracy for feature restriction of  3 : 0.7070957095709571  Lower Bound: 0.6814740811158823  Upper Bound: 0.732717338026032
+Restriction: 3  Tree count: 5  minsplit: 90
+Total Forest Accuracy for feature restriction of  3 : 0.6311881188118812  Lower Bound: 0.6040245629600454  Upper Bound: 0.658351674663717
+Restriction: 3  Tree count: 5  minsplit: 120
+Total Forest Accuracy for feature restriction of  3 : 0.6600660066006601  Lower Bound: 0.633397681354853  Upper Bound: 0.6867343318464671
+Restriction: 3  Tree count: 10  minsplit: 30
+Total Forest Accuracy for feature restriction of  3 : 0.7112211221122112  Lower Bound: 0.6857064614508226  Upper Bound: 0.7367357827735999
+Restriction: 3  Tree count: 10  minsplit: 60
+Total Forest Accuracy for feature restriction of  3 : 0.6815181518151815  Lower Bound: 0.6552889051327233  Upper Bound: 0.7077473984976397
+Restriction: 3  Tree count: 10  minsplit: 90
+Total Forest Accuracy for feature restriction of  3 : 0.6914191419141914  Lower Bound: 0.6654139566538089  Upper Bound: 0.7174243271745739
+Restriction: 3  Tree count: 10  minsplit: 120
+Total Forest Accuracy for feature restriction of  3 : 0.6773927392739274  Lower Bound: 0.6510741807665748  Upper Bound: 0.70371129778128
+Restriction: 3  Tree count: 25  minsplit: 30
+Total Forest Accuracy for feature restriction of  3 : 0.7095709570957096  Lower Bound: 0.6840132023103301  Upper Bound: 0.7351287118810891
+Restriction: 3  Tree count: 25  minsplit: 60
+Total Forest Accuracy for feature restriction of  3 : 0.6864686468646864  Lower Bound: 0.6603497035372302  Upper Bound: 0.7125875901921427
+Restriction: 3  Tree count: 25  minsplit: 90
+Total Forest Accuracy for feature restriction of  3 : 0.7136963696369637  Lower Bound: 0.6882471228765034  Upper Bound: 0.739145616397424
+Restriction: 3  Tree count: 25  minsplit: 120
+Total Forest Accuracy for feature restriction of  3 : 0.7021452145214522  Lower Bound: 0.6763985767723543  Upper Bound: 0.7278918522705501
+Restriction: 3  Tree count: 40  minsplit: 30
+Total Forest Accuracy for feature restriction of  3 : 0.6938943894389439  Lower Bound: 0.6679473928748875  Upper Bound: 0.7198413860030003
+Restriction: 3  Tree count: 40  minsplit: 60
+Total Forest Accuracy for feature restriction of  3 : 0.7194719471947195  Lower Bound: 0.6941789763972007  Upper Bound: 0.7447649179922383
+Restriction: 3  Tree count: 40  minsplit: 90
+Total Forest Accuracy for feature restriction of  3 : 0.7070957095709571  Lower Bound: 0.6814740811158823  Upper Bound: 0.732717338026032
+Restriction: 3  Tree count: 40  minsplit: 120
+Total Forest Accuracy for feature restriction of  3 : 0.7021452145214522  Lower Bound: 0.6763985767723543  Upper Bound: 0.7278918522705501
+Restriction: 4  Tree count: 5  minsplit: 30
+Total Forest Accuracy for feature restriction of  4 : 0.7079207920792079  Lower Bound: 0.6823203528535258  Upper Bound: 0.73352123130489
+Restriction: 4  Tree count: 5  minsplit: 60
+Total Forest Accuracy for feature restriction of  4 : 0.7112211221122112  Lower Bound: 0.6857064614508226  Upper Bound: 0.7367357827735999
+Restriction: 4  Tree count: 5  minsplit: 90
+Total Forest Accuracy for feature restriction of  4 : 0.6905940594059405  Lower Bound: 0.6645696726515659  Upper Bound: 0.7166184461603152
+Restriction: 4  Tree count: 5  minsplit: 120
+Total Forest Accuracy for feature restriction of  4 : 0.7029702970297029  Lower Bound: 0.6772442422907909  Upper Bound: 0.7286963517686149
+Restriction: 4  Tree count: 10  minsplit: 30
+Total Forest Accuracy for feature restriction of  4 : 0.7087458745874587  Lower Bound: 0.6831667265001121  Upper Bound: 0.7343250226748054
+Restriction: 4  Tree count: 10  minsplit: 60
+Total Forest Accuracy for feature restriction of  4 : 0.7136963696369637  Lower Bound: 0.6882471228765034  Upper Bound: 0.739145616397424
+Restriction: 4  Tree count: 10  minsplit: 90
+Total Forest Accuracy for feature restriction of  4 : 0.6856435643564357  Lower Bound: 0.6595059984240645  Upper Bound: 0.7117811302888069
+Restriction: 4  Tree count: 10  minsplit: 120
+Total Forest Accuracy for feature restriction of  4 : 0.7112211221122112  Lower Bound: 0.6857064614508226  Upper Bound: 0.7367357827735999
+Restriction: 4  Tree count: 25  minsplit: 30
+Total Forest Accuracy for feature restriction of  4 : 0.7087458745874587  Lower Bound: 0.6831667265001121  Upper Bound: 0.7343250226748054
+Restriction: 4  Tree count: 25  minsplit: 60
+Total Forest Accuracy for feature restriction of  4 : 0.7029702970297029  Lower Bound: 0.6772442422907909  Upper Bound: 0.7286963517686149
+Restriction: 4  Tree count: 25  minsplit: 90
+Total Forest Accuracy for feature restriction of  4 : 0.7252475247524752  Lower Bound: 0.7001160082479772  Upper Bound: 0.7503790412569733
+Restriction: 4  Tree count: 25  minsplit: 120
+Total Forest Accuracy for feature restriction of  4 : 0.7013201320132013  Lower Bound: 0.6755530114366668  Upper Bound: 0.7270872525897358
+Restriction: 4  Tree count: 40  minsplit: 30
+Total Forest Accuracy for feature restriction of  4 : 0.7079207920792079  Lower Bound: 0.6823203528535258  Upper Bound: 0.73352123130489
+Restriction: 4  Tree count: 40  minsplit: 60
+Total Forest Accuracy for feature restriction of  4 : 0.6996699669966997  Lower Bound: 0.6738621803605636  Upper Bound: 0.7254777536328358
+Restriction: 4  Tree count: 40  minsplit: 90
+Total Forest Accuracy for feature restriction of  4 : 0.7013201320132013  Lower Bound: 0.6755530114366668  Upper Bound: 0.7270872525897358
+Restriction: 4  Tree count: 40  minsplit: 120
+Total Forest Accuracy for feature restriction of  4 : 0.6881188118811881  Lower Bound: 0.6620374018484393  Upper Bound: 0.7142002219139368
