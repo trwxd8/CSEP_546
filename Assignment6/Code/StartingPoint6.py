@@ -54,13 +54,14 @@ import NeuralNetworkModel
 #hiddenLayers = [1, 2]
 #hiddenNodes = [2, 5, 10, 15, 20]
 
-hiddenLayers = 1
-hiddenNodes = 2
-sample = [1, .5]
+hiddenLayers = 2
+hiddenNodes = 3
+sample = [1, .75, 1.5, 1]
 
 #neuralNetwork = NeuralNetworkModel.NeuralNetworkModel(hiddenLayers, hiddenNodes, len(xTrain[0]))
 #neuralNetwork.UnitTest()
 #neuralNetwork.fit(xTrain, yTrain, iterations=200, step=0.05))
 
-neuralNetwork = NeuralNetworkModel.NeuralNetworkModel(hiddenLayers, hiddenNodes, len(sample))
-neuralNetwork.UnitTest()
+neuralNetwork = NeuralNetworkModel.NeuralNetworkModel(hiddenLayers, hiddenNodes, len(xTrain[0]))
+neuralNetwork.fit(xTrain, yTrain, iterations=1, step=0.05)
+#neuralNetwork.UnitTest()
