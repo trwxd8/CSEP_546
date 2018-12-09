@@ -47,6 +47,12 @@ bagModel.fillVocabulary(xTrainRaw)
 bagModel.LoadFrequencyDictionary(xTrainRaw)
 bagModel.LoadMutualInformationDictionary(xTrainRaw, yTrainRaw)
 
+y_len = len(yTestRaw)
+print("90% for len ",y_len)
+(lowerBounds, upperBounds) = EvaluationsStub.calculate95PercentConfidenceBounds(0.906025825, y_len)
+print("Total Forest Accuracy:", 0.906025825, " Lower Bound:", lowerBounds, " Upper Bound:", upperBounds)
+
+
 k = 1
 
 for frequentWordCount in frequencyValues:

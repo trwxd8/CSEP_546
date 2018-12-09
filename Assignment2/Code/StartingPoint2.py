@@ -45,23 +45,23 @@ model = LogisticRegressionModel.LogisticRegressionModel()
 
 print("Logistic regression model")
 
-#np_xTrain = np.insert(np.asarray(xTrain), 0, 1, axis = 1)
-#np_xTest = np.insert(np.asarray(xTest), 0, 1, axis = 1)
+np_xTrain = np.insert(np.asarray(xTrain), 0, 1, axis = 1)
+np_xTest = np.insert(np.asarray(xTest), 0, 1, axis = 1)
 np_yTrain = np.asarray(yTrain)
 np_yTest = np.asarray(yTest)
 
-#cntList = [50000]
-#for i in cntList:
-#    start = time.time()
-#    model.fit(np_xTrain, np_yTrain, iterations=i, step=0.01)
-#    yTestPredicted = model.predict(np_xTest)
-#    end = time.time()
-#    print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(np_xTest, np_yTest), EvaluationsStub.Accuracy(np_yTest, yTestPredicted)))
-#    EvaluationsStub.ExecuteAll(np_yTest, yTestPredicted)
-#    print("Model runtime:", end-start)
+cntList = [50000]
+for i in cntList:
+    start = time.time()
+    model.fit(np_xTrain, np_yTrain, iterations=i, step=0.01)
+    yTestPredicted = model.predict(np_xTest)
+    end = time.time()
+    print("%d, %f, %f, %f" % (i, model.weights[1], model.loss(np_xTest, np_yTest), EvaluationsStub.Accuracy(np_yTest, yTestPredicted)))
+    EvaluationsStub.ExecuteAll(np_yTest, yTestPredicted)
+    print("Model runtime:", end-start)
 
 #############################
-import BagOfWordsModel
+"""import BagOfWordsModel
 bagmodel = BagOfWordsModel.BagOfWordsModel()
 
 print("Running Bag of Words")
@@ -127,7 +127,7 @@ for i in [50000]:
 
 
 
-"""
+
 #############################
 import CrossValidationSupport
 

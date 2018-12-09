@@ -56,10 +56,11 @@ def Featurize(xTrainRaw, xTestRaw):
         features = []
 
         # Have a feature for longer texts
-        if(len(x)>40):
-            features.append(1)
-        else:
-            features.append(0)
+        #if(len(x)>40):
+        #    features.append(1)
+        #else:
+        #    features.append(0)
+        features.append(len(x))
 
         # Have a feature for texts with numbers in them
         if(any(i.isdigit() for i in x)):
@@ -82,10 +83,11 @@ def Featurize(xTrainRaw, xTestRaw):
         features = []
         
         # Have a feature for longer texts
-        if(len(x)>40):
-            features.append(1)
-        else:
-            features.append(0)
+        #if(len(x)>40):
+        #    features.append(1)
+        #else:
+        #    features.append(0)
+        features.append(len(x))
 
         # Have a feature for texts with numbers in them
         if(any(i.isdigit() for i in x)):

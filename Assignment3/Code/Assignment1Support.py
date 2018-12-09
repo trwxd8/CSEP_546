@@ -1,4 +1,6 @@
 import collections
+import BagOfWordsModel
+import numpy as np
 
 def LoadRawData(path):
     f = open(path, 'r')
@@ -47,7 +49,7 @@ def TrainTestSplit(x, y, percentTest = .25):
 
     return (xTrain, yTrain, xTest, yTest)
 
-def Featurize(xTrainRaw, xTestRaw):
+def FeaturizeHandcrafted(xTrainRaw, xTestRaw):
     words = ['call', 'to', 'your']
 
     # featurize the training data, may want to do multiple passes to count things.
@@ -68,8 +70,9 @@ def Featurize(xTrainRaw, xTestRaw):
             features.append(0)
 
         # Have features for a few words
+        fullWords = x.split()
         for word in words:
-            if word in x:
+            if word in fullWords:
                 features.append(1)
             else:
                 features.append(0)
@@ -94,8 +97,9 @@ def Featurize(xTrainRaw, xTestRaw):
             features.append(0)
 
         # Have features for a few words
+        fullWords = x.split()
         for word in words:
-            if word in x:
+            if word in fullWords:
                 features.append(1)
             else:
                 features.append(0)
@@ -104,7 +108,7 @@ def Featurize(xTrainRaw, xTestRaw):
 
     return (xTrain, xTest)
 
-def FeaturizeLength(xTrainRaw, xTestRaw):
+def FeaturizeContinuousLength(xTrainRaw, xTestRaw):
     words = ['call', 'to', 'your']
 
     # featurize the training data, may want to do multiple passes to count things.
@@ -122,8 +126,9 @@ def FeaturizeLength(xTrainRaw, xTestRaw):
             features.append(0)
 
         # Have features for a few words
+        fullWords = x.split()
         for word in words:
-            if word in x:
+            if word in fullWords:
                 features.append(1)
             else:
                 features.append(0)
@@ -145,8 +150,9 @@ def FeaturizeLength(xTrainRaw, xTestRaw):
             features.append(0)
 
         # Have features for a few words
+        fullWords = x.split()
         for word in words:
-            if word in x:
+            if word in fullWords:
                 features.append(1)
             else:
                 features.append(0)
@@ -159,3 +165,52 @@ def InspectFeatures(xRaw, x):
     for i in range(len(xRaw)):
         print(x[i], xRaw[i])
 
+def Featurize(xTrainRaw, yTrainRaw, xTestRaw, numFrequentWords, numMutualInformationWords, includeHandCraftedFeatures):    
+    bagModel = BagOfWordsModel.BagOfWordsModel()
+    bagModel.fillVocabulary(xTrainRaw)
+
+    usedWords = []
+    xTrain = []
+    xTest = []
+
+    if includeHandCraftedFeatures == True:
+        (xTrainHC, xTestHC) = FeaturizeHandcrafted(xTrainRaw, xTestRaw)      
+        xTrain = combineDatasets(xTrain, xTrainHC)
+        xTest = combineDatasets(xTest, xTestHC)
+
+        usedWords.append('call')
+        usedWords.append('to')
+        usedWords.append('your')
+
+
+    if numFrequentWords > 0:
+        results = bagModel.FrequencyFeatureSelection(xTrainRaw, numFrequentWords)
+        freqWords = []
+        for i in range(numFrequentWords):
+            freqWords.append(results[i][0])
+
+        xTrainFreq, xTestFreq = bagModel.FeaturizeByWords(xTrainRaw, xTestRaw, freqWords)
+        xTrain = combineDatasets(xTrain, xTrainFreq)
+        xTest = combineDatasets(xTest, xTestFreq)
+
+
+    if numMutualInformationWords > 0:
+        results = bagModel.MutualInformationFeatureSelection(xTrainRaw, yTrainRaw, numMutualInformationWords)
+        miWords = []
+        for i in range(numMutualInformationWords):
+            miWords.append(results[i][0])
+
+        xTrainMI, xTestMI = bagModel.FeaturizeByWords(xTrainRaw, xTestRaw, miWords)
+        xTrain = combineDatasets(xTrain, xTrainMI)
+        xTest = combineDatasets(xTest, xTestMI) 
+
+    return (xTrain, xTest)
+
+def combineDatasets(datasetOriginal, datasetAdditional):
+    if datasetOriginal == []:
+        return datasetAdditional
+    else:
+        cnt = len(datasetAdditional)
+        for i in range(cnt):
+            datasetOriginal[i] += datasetAdditional[i]
+        return datasetOriginal

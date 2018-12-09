@@ -36,8 +36,8 @@ print("### Heuristic model")
 EvaluationsStub.ExecuteAll(yTest, yTestPredicted)
 """
 #############################
-#(xTrain, xTest) = Assignment1Support.Featurize(xTrainRaw, xTestRaw)
-(xTrain, xTest) = Assignment1Support.FeaturizeLength(xTrainRaw, xTestRaw)
+(xTrain, xTest) = Assignment1Support.FeaturizeHandcrafted(xTrainRaw, xTestRaw)
+#(xTrain, xTest) = Assignment1Support.FeaturizeLength(xTrainRaw, xTestRaw)
 yTrain = yTrainRaw
 yTest = yTestRaw
 

@@ -78,8 +78,8 @@ class DecisionTreeModel(object):
         if xIdx == -1:
             if np.count_nonzero(bitmap) > 0:
                 xIdx = np.where(bitmap == 1)[0][0]
-        if xIdx != 0:
-            bitmap[xIdx] = 0
+        #if xIdx != 0:
+        bitmap[xIdx] = 0
 
         #Split datasets on value for feature
         (threshold, xSplitLeft, ySplitLeft, xSplitRight, ySplitRight) = self.SplitByFeature(x, y, xIdx)
